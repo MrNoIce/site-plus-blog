@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Jake Scott`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Jake Scott`,
+      summary: `junior dev trying to decide what to focus on`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A landing page for my projects, also a blog loaded with parts of my life`,
+    // siteUrl: `notreadyyet`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `Jake_M_S`,
     },
   },
   plugins: [
@@ -24,6 +24,14 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/data`,
+        name: `data`,
       },
     },
     {
@@ -60,13 +68,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Jake Scott`,
+        short_name: `Jake`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/profile-image.jpg`,
       },
     },
     `gatsby-plugin-react-helmet`,
