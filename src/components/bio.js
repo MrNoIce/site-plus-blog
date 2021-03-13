@@ -60,7 +60,7 @@ const Bio = () => {
         Written by <strong>{author.name}</strong> - {author.summary}
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          You should actually use your twitter
+          Twitter
         </a>
       </p>
     </div>

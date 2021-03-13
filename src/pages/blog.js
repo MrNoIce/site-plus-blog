@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -37,6 +38,7 @@ const BlogIndex = ({ data, location }) => {
                 }}
               />
             </section>
+            <Img fixed={node.frontmatter.coverPhoto.childImageSharp.fixed} alt="test" />
           </article>
         )
       })}
@@ -53,7 +55,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       edges {
         node {
           excerpt
@@ -64,6 +66,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            coverPhoto {
+              childImageSharp {
+                fixed (width:250, height:250) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
