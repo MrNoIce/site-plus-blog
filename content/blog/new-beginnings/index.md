@@ -2,6 +2,7 @@
 title: New Beginnings
 date: "2015-05-28T22:40:32.169Z"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+coverPhoto: EditedHeadShot.jpg
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and
@@ -18,7 +19,7 @@ made herself on the way.
 
 - This however showed weasel
 - Well uncritical so misled
-  - this is very interesting
+- this is very interesting
 - Goodness much until that fluid owl
 
 When she reached the first hills of the **Italic Mountains**, she had a last
