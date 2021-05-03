@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
       <Contact />
       <div className="blog-link" style={{ padding: `.4rem` }}>
         <Link to="/blog/" style={{ float: `right` }}>
-          About
+          Blog
         </Link>{" "}
       </div>
       <hr
