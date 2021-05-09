@@ -4,14 +4,10 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
+        allMarkdownRemark {
           edges {
             node {
               fields {
@@ -19,6 +15,7 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                template
               }
             }
           }
@@ -31,7 +28,7 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
 
-  // Create blog posts pages.
+  // Create blog posts and pages.
   const posts = result.data.allMarkdownRemark.edges
 
   posts.forEach((post, index) => {
@@ -40,7 +37,9 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: post.node.fields.slug,
-      component: blogPost,
+      component: path.resolve(
+        `src/templates/${post.node.frontmatter.template}`
+      ),
       context: {
         slug: post.node.fields.slug,
         previous,
