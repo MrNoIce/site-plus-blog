@@ -1,95 +1,121 @@
-import React, { Component } from "react"
-import emailjs from "emailjs-com"
+import React from "react";
+import PropTypes from "prop-types";
+import Button from "@material-ui/core/Button";
+import { navigate } from "gatsby-link";
+import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 
-class ContactForm extends Component {
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
+
+class ContactForm extends React.Component {
   state = {
     name: "",
     email: "",
     message: "",
-  }
+    submitError: ""
+  };
 
-  handleSubmit(e) {
-    e.preventDefault()
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_xHJcuAgG",
-        e.target,
-        "user_kf5tCn32h6RcPBUNDdmal"
-      )
-      .then(
-        result => {
-          console.log(result.text)
-        },
-        error => {
-          console.log(error.text)
-        }
-      )
-    this.formValidation()
-    this.resetForm()
-  }
+  handleChange = event => {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
 
-  formValidation = () => {
-    alert("Email has been sent!")
-  }
+    this.setState({ [name]: value });
+  };
 
-  resetForm() {
-    this.setState({
-      name: "",
-      email: "",
-      message: "",
+  handleNetworkError = e => {
+    this.setState({ submitError: "There was a network error." });
+  };
+
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
     })
-  }
+      .then(() => {
+        console.log("Form submission success");
+        navigate("/success");
+      })
+      .catch(error => {
+        console.error("Form submission error:", error);
+        this.handleNetworkError();
+      });
 
-  handleChange = (param, e) => {
-    this.setState({ [param]: e.target.value })
-  }
+    e.preventDefault();
+  };
+
   render() {
+    const { email, name, message, submitError } = this.state;
+
     return (
-      <>
-        <form className="contact_form" onSubmit={this.handleSubmit.bind(this)}>
-          <h2>Contact me</h2>
-          <div className="form_group">
-            <label htmlFor="name"> </label>
-            <input
-              type="text"
-              className="form_control"
-              name="from_name"
-              value={this.state.name}
-              onChange={this.handleChange.bind(this, "name")}
-              placeHolder="Name"
-            ></input>
-          </div>
-          <div className="form_group">
-            <label htmlFor="email"> </label>
-            <input
-              type="text"
-              className="form_control"
-              name="reply_to"
-              value={this.state.email}
-              onChange={this.handleChange.bind(this, "email")}
-              placeHolder="Email"
-            ></input>
-          </div>
-          <div className="form_group">
-            <label htmlFor="message"> </label>
-            <textarea
-              type="text"
-              className="form_control"
-              rows="2"
-              name="message_html"
-              value={this.state.message}
-              onChange={this.handleChange.bind(this, "message")}
-              placeHolder="Message"
-            ></textarea>
-          </div>
-          <button type="submit" className="form_button">
-            Send
-          </button>
-        </form>
-      </>
-    )
+      <ValidatorForm
+        onSubmit={this.handleSubmit}
+        onError={errors => console.log(errors)}
+        name="contact"
+        ref={f => (this.form = f)}
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        {submitError && <p className={"form-submit-error"}>{submitError}</p>}
+        <TextValidator
+          id="name"
+          name="name"
+          label="Name"
+          value={name}
+          onChange={this.handleChange}
+          validators={["required"]}
+          errorMessages={["this field is required"]}
+          fullWidth
+          margin="normal"
+          className={"form-single-line"}
+        />
+        <TextValidator
+          id="email"
+          name="email"
+          label="E-mail"
+          value={email}
+          onChange={this.handleChange}
+          validators={["required", "isEmail"]}
+          errorMessages={["this field is required", "email is not valid"]}
+          fullWidth
+          margin="normal"
+          className={"form-single-line"}
+        />
+        <TextValidator
+          id="message"
+          name="message"
+          label="Message"
+          value={message}
+          onChange={this.handleChange}
+          validators={["required"]}
+          errorMessages={["this field is required"]}
+          multiline
+          fullWidth
+          margin="normal"
+          className={"form-multi-line"}
+        />
+        <input name="bot-field" style={{ display: "none" }} />
+        <Button
+          variant="raised"
+          color="primary"
+          size="large"
+          type="submit"
+          className={"form-submit-btn"}
+        >
+          Send
+        </Button>
+      </ValidatorForm>
+    );
   }
 }
 
-export default ContactForm
+ContactForm.propTypes = {
+  classes: PropTypes.object.isRequired
+};
+
+export default ContactForm;
