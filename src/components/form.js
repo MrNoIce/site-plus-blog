@@ -105,7 +105,7 @@ class ContactForm extends React.Component {
           color="primary"
           size="large"
           type="submit"
-          className={"form-submit-btn"}
+          class="form-btn"
         >
           Send
         </Button>

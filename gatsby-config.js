@@ -1,15 +1,18 @@
+const config = require("./content/meta/config");
+
 module.exports = {
   siteMetadata: {
-    title: `Jake Scott`,
+    title: config.siteTitle,
     author: {
-      name: `Jake Scott`,
+      name: config.authorName,
       summary: `Engineer - looking to create new things`,
     },
-    description: `A landing page for my projects, also a blog loaded with parts of my life`,
-    // siteUrl: `notreadyyet`,
+    description: config.siteDescription,
+    siteUrl: config.siteUrl,
     social: {
-      twitter: `Jake_M_S`,
+      twitter: config.authorTwitterAccount,
     },
+    pathPrefix: config.pathPrefix,
   },
   plugins: [
     {
@@ -82,11 +85,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Jake Scott`,
-        short_name: `Jake`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        display: `minimal-ui`,
+        name: config.manifestName,
+        short_name: config.manifestShortName,
+        start_url: config.manifestStartUrl,
+        background_color: config.manifestBackgroundColor,
+        theme_color: config.manifestThemeColor,
+        display: config.manifestDisplay,
         icon: `content/assets/icons/favicon-32x32.png`,
       },
     },
