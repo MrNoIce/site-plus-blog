@@ -9,14 +9,14 @@ const NavHead = ( props ) => {
           <Link className="site-nav-item" to="/blog">
             Blog
           </Link>
-          <Link className="site-nav-item" to="/contact">
-            Contact
+          <Link className="site-nav-item" to="/projects">
+            Projects
           </Link>
           <Link className="site-nav-item" to="/resume">
             Resume
           </Link>
-          <Link className="site-nav-item" to="/projects">
-            Projects
+          <Link className="site-nav-item" to="/contact">
+            Contact
           </Link>
         </div>
       </div>
