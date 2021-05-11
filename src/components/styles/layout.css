@@ -1048,10 +1048,8 @@ form {
 /* ---------------------------------------------------------- */
 
 .site-foot {
-  padding: 20px 0 40px 0;
-  color: rgba(255,255,255,0.7);
+  padding: 60px 0 40px 0;
   font-size: 1.3rem;
-  background: var(--color-base);
 }
 
 .site-foot-nav {

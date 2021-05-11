@@ -2,8 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
@@ -34,13 +33,7 @@ const BlogIndex = ({ data, location }) => {
                 </div>
                 <div class="post-card-title">
                   <div class="post-card-title-time">
-                    {/* <Link
-                      class="post-car"
-                      style={{ boxShadow: `none`, textDecoration: `none` }}
-                      to={node.fields.slug}
-                    > */}
                     {title}
-                    {/* </Link> */}
                     <small>{node.frontmatter.date}</small>
                   </div>
                   <section class="post-card-exerpt">
@@ -56,7 +49,6 @@ const BlogIndex = ({ data, location }) => {
           })}
         </div>
       </div>
-      <Bio />
     </Layout>
   )
 }

@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import Contact from "./contact"
+import Contact from "../main/contact"
 import PropTypes from "prop-types"
 import React from "react"
 import NavHead from './nav'

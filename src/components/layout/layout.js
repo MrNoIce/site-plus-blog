@@ -2,9 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import Bio from '../main/bio'
 
 import Header from "./header"
-import "./layout.css"
+import "../styles/layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -46,8 +47,8 @@ const Layout = ({ children }) => {
         >
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()},{` `}
-            <p>Jake Scott</p>
+            <Bio/>
+
           </footer>
         </div>
         </div>

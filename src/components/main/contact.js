@@ -4,7 +4,7 @@ import { github } from "react-icons-kit/icomoon/github"
 import { twitter } from "react-icons-kit/icomoon/twitter"
 import { mail4 } from "react-icons-kit/icomoon/mail4"
 import { linkedin } from "react-icons-kit/icomoon/linkedin"
-import "./layout.css"
+import "../styles/layout.css"
 
 const Contact = () => (
   <>
