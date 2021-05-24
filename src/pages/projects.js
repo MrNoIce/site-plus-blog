@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout/layout"
 import ProjectCard from "../components/projects/projectcard"
-import servicerequest from "../../content/pages/servicerequest"
 
 
 
