@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
 import { navigate } from "gatsby-link";
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
@@ -114,8 +113,5 @@ class ContactForm extends React.Component {
   }
 }
 
-ContactForm.propTypes = {
-  classes: PropTypes.object.isRequired
-};
 
 export default ContactForm;
