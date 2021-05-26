@@ -12,18 +12,18 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <div classname="container">
-        <div class="post-feed">
+      <div className="container">
+        <div className="post-feed">
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <Link
-                class="post-card"
+                className="post-card"
                 key={node.fields.slug}
                 to={node.fields.slug}
                 style={{ textDecoration: "none" }}
               >
-                <div class="post-card-image">
+                <div className="post-card-image">
                   <Img
                     style={{ height: "100%", width: "100%" }}
                     imgStyle={{ objectFit: "contain" }}
@@ -31,12 +31,12 @@ const BlogIndex = ({ data, location }) => {
                     alt="test"
                   />
                 </div>
-                <div class="post-card-title">
-                  <div class="post-card-title-time">
+                <div className="post-card-title">
+                  <div className="post-card-title-time">
                     {title}
                     <small>{node.frontmatter.date}</small>
                   </div>
-                  <section class="post-card-exerpt">
+                  <section className="post-card-exerpt">
                     <p
                       dangerouslySetInnerHTML={{
                         __html: node.frontmatter.description || node.excerpt,
@@ -74,7 +74,7 @@ export const data = graphql`
             title
             coverPhoto {
               childImageSharp {
-                fluid(maxWidth: 800) {
+                fluid(maxHeight: 300, maxWidth: 600, cropFocus: CENTER, fit: COVER) {
                   ...GatsbyImageSharpFluid
                 }
               }

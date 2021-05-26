@@ -1,8 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
-import injectSheet from "react-jss";
 import Button from "@material-ui/core/Button";
-import { navigateTo } from "gatsby-link";
+import { navigate } from "gatsby-link";
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 
 function encode(data) {
@@ -10,33 +8,6 @@ function encode(data) {
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 }
-
-const styles = theme => ({
-  submit: {
-    margin: "3em 0"
-    //width: "100%"
-  },
-  multilineInput: {
-    lineHeight: 1.4,
-    fontSize: "1.2em"
-  },
-  singleLineInput: {
-    lineHeight: 1.4,
-    fontSize: "1.2em",
-    [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
-      width: "47%",
-      marginLeft: "3%",
-      "&:first-child": {
-        marginRight: "3%",
-        marginLeft: 0
-      }
-    }
-  },
-  submitError: {
-    background: "red",
-    color: "white"
-  }
-});
 
 class RequestForm extends React.Component {
   state = {
@@ -69,7 +40,7 @@ class RequestForm extends React.Component {
     })
       .then(() => {
         console.log("Form submission success");
-        navigateTo("/success");
+        navigate("/success");
       })
       .catch(error => {
         console.error("Form submission error:", error);
@@ -182,8 +153,4 @@ class RequestForm extends React.Component {
   }
 }
 
-RequestForm.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default injectSheet(styles)(RequestForm);
+export default RequestForm;

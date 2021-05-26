@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-const BlogPostTemplate = ({ data, location }) => {
+const PageTemplate = ({ data, location }) => {
   const page = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
 
@@ -47,7 +47,7 @@ const BlogPostTemplate = ({ data, location }) => {
   )
 }
 
-export default BlogPostTemplate
+export default PageTemplate
 
 export const pageQuery = graphql`
   query dataPage($slug: String!) {
