@@ -21,7 +21,6 @@ const BlogIndex = ({ data, location }) => {
                 className="post-card"
                 key={node.fields.slug}
                 to={node.fields.slug}
-                style={{ textDecoration: "none" }}
               >
                 <div className="post-card-image">
                   <Img
