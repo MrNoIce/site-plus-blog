@@ -429,6 +429,7 @@ blockquote cite a {
 a {
   color: #26a8ed;
   text-decoration: none;
+  box-shadow: none;
 }
 
 a:hover {
@@ -707,11 +708,11 @@ form {
 }
 .contact-links {
   display: flex;
-  padding: .4rem;
+  padding: .5rem;
 }
 .contact-icon {
-  color: rgb(79, 77, 80);
-  box-shadow: 2, 2, 2, #000;
+  color: rgb(126, 123, 128);
+  box-shadow: none;
 }
 /* Header
 /* ---------------------------------------------------------- */
@@ -846,7 +847,7 @@ form {
 }
 
 .post-card:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .post-card-tags {

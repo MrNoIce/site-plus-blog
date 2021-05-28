@@ -1,7 +1,6 @@
 ---
 title: About
 path: "/about/"
-slug: "/pages/1--about"
 coverPhoto: avatar.jpg
 template: page-template.js
 ---
