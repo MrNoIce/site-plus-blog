@@ -710,9 +710,13 @@ form {
   display: flex;
   padding: .5rem;
 }
+.contact-icon:hover {
+  color: #c7d5d8;
+}
 .contact-icon {
   color: rgb(126, 123, 128);
   box-shadow: none;
+  opacity: 1;
 }
 /* Header
 /* ---------------------------------------------------------- */
