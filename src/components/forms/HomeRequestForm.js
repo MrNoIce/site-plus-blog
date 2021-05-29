@@ -1,7 +1,6 @@
 import React from "react"
 import Button from "@material-ui/core/Button"
-import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+import SEO from "../seo"
 import { navigate } from "gatsby-link"
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator"
 
@@ -55,7 +54,7 @@ class HomeRequestForm extends React.Component {
     const { email, name, phone, servicesneeded, submitError } = this.state
 
     return (
-      <Layout>
+      <>
         <SEO title="Contact" />
         <ValidatorForm
           onSubmit={this.handleSubmit}
@@ -126,7 +125,7 @@ class HomeRequestForm extends React.Component {
             Send Request
           </Button>
         </ValidatorForm>
-      </Layout>
+      </>
     )
   }
 }
