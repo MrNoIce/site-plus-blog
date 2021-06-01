@@ -13,7 +13,7 @@ const ProjectCard = () => {
             description
             url
             tech
-            
+
           }
         }
       }
@@ -21,11 +21,8 @@ const ProjectCard = () => {
   `)
   const data = dataJson.allDataJson.edges
 
-  console.log(data, "data")
-
   return (
       <div className="project-card">
-
           {data.map(({ node: project }) => {
             const name = project.name
             const description = project.description
