@@ -44,9 +44,9 @@ I always had an eye for the W114 Mercedes chassis and when one came up for sale,
 
 ---
 
-<!-- <video controls>
-  <source src="IMG_3401.MOV" type="video/mp4">
-</video> -->
+<video controls className="video_container" >
+  <source src="IMG_3401.MOV" type="video/mp4" />
+</video>
 
 ---
 
@@ -57,14 +57,14 @@ I always had an eye for the W114 Mercedes chassis and when one came up for sale,
 
 # Timelapse of the build process
 
-<!-- blank line -->
-<!-- <figure class="video_container">
+
+<figure>
   <iframe width="1280" height="720" src="https://www.youtube.com/embed/19YgtSZUFa0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-</figure> -->
-<!-- blank line -->
+</figure>
+
 
 ### And a short video I put together when I listed it for sale
 
-<!-- <figure class="video_container">
+<figure>
   <iframe width="1280" height="720" src="https://www.youtube.com/embed/761BoVGhYpo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure> -->
+</figure>

@@ -11,9 +11,6 @@ const ProjectDisplay = ({ description, name, url, tech, gif }) => (
     <div>
       <p>{description}</p>
     </div>
-    <div>
-        {/* <img src={require(gif)} alt={name}/> */}
-    </div>
     <hr
       style={{
         borderbottom: `1px solid #eee`,
