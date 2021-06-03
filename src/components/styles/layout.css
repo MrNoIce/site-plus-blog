@@ -777,7 +777,7 @@ form {
   margin: 0;
   padding: 0;
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.3em;
 }
 
@@ -789,11 +789,20 @@ form {
   opacity: 0.7;
 }
 
+@media (max-width: 500px){
+  .nav-container {
+    display: none;
+  }
+}
 .site-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 15px 0 0 0;
+}
+
+.mobile-nav-item {
+  font-size: large;
 }
 
 .site-nav-left {
@@ -813,6 +822,15 @@ form {
 
 .site-nav-button:hover {
   text-decoration: none;
+}
+
+@media (min-width: 500px) {
+  .mobile_menu {
+    display: none;
+  }
+}
+.mobile_menu_open {
+  color: #15171A;
 }
 
 /* Main
