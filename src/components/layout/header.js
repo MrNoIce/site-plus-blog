@@ -3,6 +3,7 @@ import Contact from "../main/contact"
 import PropTypes from "prop-types"
 import React from "react"
 import NavHead from "./nav"
+import MobileMenu from "./menu";
 
 const Header = ({ siteTitle, siteDescription }) => (
   <header
@@ -32,6 +33,7 @@ const Header = ({ siteTitle, siteDescription }) => (
           {/* The navigation items as setup in Ghost */}
           {/* <Navigation data={site.navigation} navClass="site-nav-item" /> */}
           <NavHead />
+          <MobileMenu />
         </div>
         <div className="site-nav-right"></div>
       </nav>
