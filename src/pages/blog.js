@@ -25,7 +25,7 @@ const BlogIndex = ({ data, location }) => {
                 <div className="post-card-image">
                   <Img
                     style={{ height: "100%", width: "100%" }}
-                    imgStyle={{ objectFit: "contain" }}
+                    imgStyle={{ objectFit: "contain", borderRadius: "7px" }}
                     fluid={node.frontmatter.coverPhoto.childImageSharp.fluid}
                     alt="test"
                   />

@@ -427,7 +427,7 @@ blockquote cite a {
 /*------------------------Links-----------*/
 
 a {
-  color: #26a8ed;
+  color: var(--color-primary);
   text-decoration: none;
   box-shadow: none;
 }
@@ -507,6 +507,10 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+}
+
+.viewport-top {
+
 }
 
 .container {
@@ -837,7 +841,9 @@ form {
 /* ---------------------------------------------------------- */
 
 .site-main {
-  padding: 4vw 0;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.0875rem 1.45rem;
 }
 
 /* Index
@@ -857,7 +863,7 @@ form {
       grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 680px) {
+@media (max-width: 500px) {
   .post-feed {
       grid-template-columns: 1fr;
   }
@@ -894,6 +900,7 @@ form {
   margin: 0 0 10px 0;
   width: auto;
   background-size: cover;
+  border-radius: 20px;
 }
 
 .post-card-title-time {
@@ -1085,8 +1092,10 @@ form {
 /* ---------------------------------------------------------- */
 
 .site-foot {
-  padding: 60px 0 40px 0;
   font-size: 1.3rem;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem 1.0875rem 1.45rem;
 }
 
 .site-foot-nav {
