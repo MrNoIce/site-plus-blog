@@ -1,12 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
-const IndexPage = () => {
+
+const IndexPage = ({ data }) => {
+  const page = data.mdx
+  const siteTitle = data.site.siteMetadata.title
   return (
     <Layout>
+      {siteTitle}
       <h2>
-        Hi, I'm Jake Scott - engineer by design - full time student in Mechanical Engineering - all-around general handyman.
+        Hi, I'm Jake Scott - engineer by design - all-around general handyman.
       </h2>
       <h2>
         My latest projects can be found on my <Link to="/blog">blog</Link> and
@@ -23,7 +28,27 @@ const IndexPage = () => {
 
       </h3>
       <h2>Here is about where the hell I'll figure out to put some more shit about this site</h2>
+      <MDXRenderer>{page.body}</MDXRenderer>
     </Layout>
   )
 }
 export default IndexPage
+
+export const indexQuery = graphql`
+  query index{
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    mdx(fileAbsolutePath: {regex: "/Homeservices/"}) {
+      id
+      excerpt(pruneLength: 160)
+      body
+      frontmatter {
+        title
+        date(formatString: "MMMM DD, YYYY")
+      }
+    }
+  }
+`
