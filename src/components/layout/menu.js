@@ -31,7 +31,6 @@ function MobileMenu() {
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
-        className="mobile_menu_open"
       >
         <MenuItem onClick={handleClose}>
           <Link className="mobile-nav-item" to="/blog">
@@ -53,8 +52,13 @@ function MobileMenu() {
             Contact
           </Link>
         </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link className="mobile-nav-item" to="/services">
+            Services
+          </Link>
+        </MenuItem>
       </Menu>
     </div>
   )
 }
-export default MobileMenu
+export default MobileMenu;

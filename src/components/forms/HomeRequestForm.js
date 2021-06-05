@@ -112,7 +112,7 @@ class HomeRequestForm extends React.Component {
             multiline
             fullWidth
             margin="normal"
-            className="form-multi-line"
+            className={"form-multi-line"}
           />
           <input name="bot-field" style={{ display: "none" }} />
           <Button
@@ -120,7 +120,7 @@ class HomeRequestForm extends React.Component {
             color="primary"
             size="large"
             type="submit"
-            className="form-btn"
+            class="form-btn"
           >
             Send Request
           </Button>
