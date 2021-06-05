@@ -61,7 +61,7 @@ const Bio = () => {
         </Link>
 
         <p>
-          Written by <strong>{author.name}</strong> {` `}©{" "}
+          Designed and built by <strong>{author.name}</strong> {` `}©{" "}
           {new Date().getFullYear()},{` `}
           <br /> {author.summary}
           {` `}
