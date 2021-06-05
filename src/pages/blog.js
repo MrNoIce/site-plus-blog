@@ -27,7 +27,7 @@ const BlogIndex = ({ data, location }) => {
                     style={{ height: "100%", width: "100%" }}
                     imgStyle={{ objectFit: "contain", borderRadius: "7px" }}
                     fluid={node.frontmatter.coverPhoto.childImageSharp.fluid}
-                    alt="test"
+                    alt={node.frontmatter.coverPhoto.name}
                   />
                 </div>
                 <div className="post-card-title">
@@ -72,6 +72,7 @@ export const data = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             coverPhoto {
+              name
               childImageSharp {
                 fluid(maxHeight: 300, maxWidth: 600, cropFocus: CENTER, fit: COVER) {
                   ...GatsbyImageSharpFluid
