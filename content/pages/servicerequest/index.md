@@ -3,12 +3,15 @@ title: Vehicle Services
 coverPhoto: avatar.jpg
 template: page-template.js
 slug: servicerequest
+path: "/pages/servicerequest/"
 ---
 
 
 # How can I help you with your project?
 
+
 ![Shop Image](jms-88.JPG)
+
 
 ---
 
