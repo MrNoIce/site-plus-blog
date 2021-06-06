@@ -61,7 +61,7 @@ export const data = graphql`
         title
       }
     }
-    allMdx(filter: {frontmatter: {group: {eq: "posts"}}}) {
+    allMdx(filter: {frontmatter: {group: {eq: "posts"}}}, sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
