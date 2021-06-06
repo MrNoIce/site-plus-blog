@@ -1,15 +1,16 @@
-import { Link } from "gatsby"
+import { Link, withPrefix } from "gatsby"
 import Contact from "../main/contact"
 import PropTypes from "prop-types"
 import React from "react"
 import NavHead from "./nav"
 import MobileMenu from "./menu";
 
-const Header = ({ siteTitle, siteDescription }) => (
+
+const Header = ({ siteTitle, siteDescription, siteBackgroundImage }) => (
   <header
     className="site-head"
     // style={{
-    //   ...(site.cover_image && { backgroundImage: `url(${site.cover_image})` }),
+    //   backgroundImage: `url(${withPrefix('cb750-88.JPG')})`
     // }}
   >
     <div className="container">

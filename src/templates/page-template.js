@@ -17,7 +17,7 @@ const PageTemplate = ({ data, location }) => {
         description={page.frontmatter.description || page.excerpt}
       />
       <article>
-        <header>
+        {/* <header>
           <h1
             style={{
               marginTop: rhythm(1),
@@ -35,7 +35,7 @@ const PageTemplate = ({ data, location }) => {
           >
             {page.frontmatter.date}
           </p>
-        </header>
+        </header> */}
         <MDXRenderer>{page.body}</MDXRenderer>
         <hr
           style={{

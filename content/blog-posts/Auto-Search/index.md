@@ -1,6 +1,6 @@
 ---
 title: Auto Search App
-subTitle: LS powered
+subTitle: Python/Django App
 category: "software development"
 coverPhoto: avatar.jpg
 path: "/Auto-Search"
