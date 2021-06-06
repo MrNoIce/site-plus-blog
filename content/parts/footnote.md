@@ -2,6 +2,7 @@
 title: footnote
 coverPhoto: avatar.jpg
 template: page-template.js
+group: pages
 ---
 
 <center>

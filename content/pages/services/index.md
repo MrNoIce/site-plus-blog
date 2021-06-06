@@ -3,6 +3,7 @@ title: Services
 menuTitle: Services
 path: "/pages/services/"
 coverPhoto: null
+group: pages
 template: page-template.js
 ---
 

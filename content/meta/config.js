@@ -7,6 +7,7 @@ module.exports = {
   siteUrl: "https://jakescott.dev",
   pathPrefix: "",
   siteImage: "avatar.png",
+  siteBackgroundImage: "cb750-88.JPG",
   siteLanguage: "en",
   // author
   authorName: "jake scott",
