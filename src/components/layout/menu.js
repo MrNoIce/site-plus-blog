@@ -37,11 +37,11 @@ function MobileMenu() {
             Blog
           </Link>
         </MenuItem>
-        <MenuItem onClick={handleClose}>
+        {/* <MenuItem onClick={handleClose}>
           <Link className="mobile-nav-item" to="/projects">
             Projects
           </Link>
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem onClick={handleClose}>
           <Link className="mobile-nav-item" to="/resume">
             Resume
@@ -52,11 +52,11 @@ function MobileMenu() {
             Contact
           </Link>
         </MenuItem>
-        <MenuItem onClick={handleClose}>
+        {/* <MenuItem onClick={handleClose}>
           <Link className="mobile-nav-item" to="/services">
             Services
           </Link>
-        </MenuItem>
+        </MenuItem> */}
       </Menu>
     </div>
   )

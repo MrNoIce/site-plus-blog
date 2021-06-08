@@ -9,18 +9,18 @@ const NavHead = ( props ) => {
           <Link className="site-nav-item" to="/blog">
             Blog
           </Link>
-          <Link className="site-nav-item" to="/projects">
+          {/* <Link className="site-nav-item" to="/projects">
             Projects
-          </Link>
+          </Link> */}
           <Link className="site-nav-item" to="/resume">
             Resume
           </Link>
           <Link className="site-nav-item" to="/contact">
             Contact
           </Link>
-          <Link className="site-nav-item" to="/services">
+          {/* <Link className="site-nav-item" to="/services">
             Services
-          </Link>
+          </Link> */}
         </div>
       </div>
     </>

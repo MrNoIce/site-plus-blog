@@ -8,7 +8,7 @@ group: posts
 date: "2021-03-16"
 template: blog-post.js
 ---
-# W114 Mercedes 250 Cruiser
+# LS powered W114 Cruiser
 
 
 ![MercedesEngine](mercedes-jms-37.JPG)
