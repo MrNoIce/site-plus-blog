@@ -1,6 +1,6 @@
 ---
 title: Vehicle Services
-coverPhoto: avatar.jpg
+coverPhoto: jms-88.JPG
 template: page-template.js
 slug: servicerequest
 path: "/pages/servicerequest/"

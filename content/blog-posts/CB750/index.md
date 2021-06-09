@@ -7,6 +7,7 @@ path: "/CB750"
 group: posts
 date: "2021-06-13"
 template: blog-post.js
+isPublished: true
 ---
 
 ---
