@@ -8,6 +8,7 @@ group: posts
 date: "2021-05-16"
 template: blog-post.js
 tech: [" Python ", "Django ", "Templates ", "REST API ", "Bootstrap"]
+isPublished: true
 ---
 
 #### this is it

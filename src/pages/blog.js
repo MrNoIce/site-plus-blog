@@ -55,28 +55,27 @@ const BlogIndex = ({ data, location }) => {
 export default BlogIndex
 
 export const data = graphql`
-  {
-    site {
-      siteMetadata {
-        title
-      }
+{
+  site {
+    siteMetadata {
+      title
     }
-    allMdx(filter: {frontmatter: {group: {eq: "posts"}}}, sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            coverPhoto {
-              name
-              childImageSharp {
-                fluid(maxHeight: 300, maxWidth: 600, cropFocus: CENTER, fit: COVER) {
-                  ...GatsbyImageSharpFluid
-                }
+  }
+  allMdx(filter: {frontmatter: {group: {eq: "posts"}, isPublished: {eq: true}}}, sort: {fields: [frontmatter___date], order: DESC}) {
+    edges {
+      node {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          coverPhoto {
+            name
+            childImageSharp {
+              fluid(maxHeight: 300, maxWidth: 600, cropFocus: CENTER, fit: COVER) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -84,4 +83,6 @@ export const data = graphql`
       }
     }
   }
+}
+
 `

@@ -7,6 +7,7 @@ path: "/Mercedes-Build"
 group: posts
 date: "2021-03-16"
 template: blog-post.js
+isPublished: true
 ---
 # LS powered W114 Cruiser
 

@@ -7,6 +7,7 @@ path: "/Cressida"
 group: posts
 date: "2021-04-13"
 template: blog-post.js
+isPublished: true
 ---
 
 # The infamous MX73 Drift Missle
