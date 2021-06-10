@@ -5,6 +5,7 @@ path: "/pages/services/"
 coverPhoto: null
 group: pages
 template: page-template.js
+description: Services Offered
 ---
 
 # This is my services page

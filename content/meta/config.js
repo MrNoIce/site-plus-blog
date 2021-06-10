@@ -19,8 +19,8 @@ module.exports = {
   manifestName: "PersonalBlog - a blog to show my work",
   manifestShortName: "PersonalBlog", // max 12 characters
   manifestStartUrl: "/",
-  // manifestBackgroundColor: colors.background,
-  // manifestThemeColor: colors.background,
+  manifestBackgroundColor: "#ffffff",
+  manifestThemeColor: "#ffffff",
   manifestDisplay: "standalone",
   // contact
   contactEmail: "Jake.Murphy.Scott@gmail.com",

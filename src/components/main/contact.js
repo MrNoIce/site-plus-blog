@@ -8,7 +8,7 @@ import "../styles/layout.css"
 
 const Contact = () => (
   <>
-    <div
+    <ul
       className="contact"
       style={{
         display: `flex`,
@@ -17,39 +17,35 @@ const Contact = () => (
         padding: `.7rem 0`,
       }}
     >
-      <a
-        href="https://github.com/MrNoIce"
-        target="_blank"
-        rel="noreferrer"
-        className="contact-links"
-      >
-        <Icon className="contact-icon" size={25} icon={github} />
-      </a>
-      <a
-        href="https://github.com/MrNoIce"
-        target="_blank"
-        rel="noreferrer"
-        className="contact-links"
-      >
-        <Icon className="contact-icon" size={25} icon={twitter} />
-      </a>
-      <a
-        href="mailto:jake.murphy.scott@gmail.com?Subject=Hello%20Jake"
-        target="_blank"
-        rel="noreferrer"
-        className="contact-links"
-      >
-        <Icon className="contact-icon" size={25} icon={mail4} />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/jakemurphyscott/"
-        target="_blank"
-        rel="noreferrer"
-        className="contact-links"
-      >
-        <Icon className="contact-icon" size={25} icon={linkedin} />
-      </a>
-    </div>
+      <li className="contact-links">
+        <a href="https://github.com/MrNoIce" target="_blank" rel="noreferrer">
+          <Icon className="contact-icon" size={25} icon={github} />
+        </a>
+      </li>
+      <li className="contact-links">
+        <a href="https://github.com/MrNoIce" target="_blank" rel="noreferrer">
+          <Icon className="contact-icon" size={25} icon={twitter} />
+        </a>
+      </li>
+      <li className="contact-links">
+        <a
+          href="mailto:jake.murphy.scott@gmail.com?Subject=Hello%20Jake"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icon className="contact-icon" size={25} icon={mail4} />
+        </a>
+      </li>
+      <li className="contact-links">
+        <a
+          href="https://www.linkedin.com/in/jakemurphyscott/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icon className="contact-icon" size={25} icon={linkedin} />
+        </a>
+      </li>
+    </ul>
   </>
 )
 

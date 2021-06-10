@@ -1,4 +1,4 @@
-import { Link, withPrefix } from "gatsby"
+import { Link } from "gatsby"
 import Contact from "../main/contact"
 import PropTypes from "prop-types"
 import React from "react"
@@ -31,8 +31,6 @@ const Header = ({ siteTitle, siteDescription, siteBackgroundImage }) => (
       </div>
       <nav className="site-nav">
         <div className="site-nav-left">
-          {/* The navigation items as setup in Ghost */}
-          {/* <Navigation data={site.navigation} navClass="site-nav-item" /> */}
           <NavHead />
           <MobileMenu />
         </div>

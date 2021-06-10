@@ -9,6 +9,7 @@ date: "2021-05-16"
 template: blog-post.js
 tech: [" Python ", "Django ", "Templates ", "REST API ", "Bootstrap"]
 isPublished: true
+description: An application to search used car listings built with Python/Django
 ---
 
 #### this is it
