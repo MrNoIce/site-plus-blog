@@ -8,6 +8,7 @@ group: posts
 date: "2021-04-13"
 template: blog-post.js
 isPublished: true
+description: 1JZ Swapped 1986 Toyota Cressida build
 ---
 
 # The infamous MX73 Drift Missle

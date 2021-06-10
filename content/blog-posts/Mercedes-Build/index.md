@@ -8,6 +8,7 @@ group: posts
 date: "2021-03-16"
 template: blog-post.js
 isPublished: true
+description: LS Swapped 1972 Mercedes 250 build
 ---
 # LS powered W114 Cruiser
 

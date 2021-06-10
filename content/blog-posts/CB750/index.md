@@ -8,6 +8,7 @@ group: posts
 date: "2021-06-13"
 template: blog-post.js
 isPublished: true
+description: 1982 Honda CB750 Cafe Racer build
 ---
 
 ---

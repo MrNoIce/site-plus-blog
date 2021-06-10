@@ -6,7 +6,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const IndexPage = ({ data }) => {
   const page = data.mdx
-  const siteTitle = data.site.siteMetadata.title
   return (
     <Layout>
       <MDXRenderer>{page.body}</MDXRenderer>

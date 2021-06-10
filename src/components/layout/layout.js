@@ -1,5 +1,4 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import Bio from "../main/bio"
 
@@ -29,12 +28,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet>
-        <html lang={"en"} />
-        <style type="text/css">{""}</style>
-        <body className={""} />
-      </Helmet>
-
       <div className="viewport">
         <div className="viewport-top">
           <Header
