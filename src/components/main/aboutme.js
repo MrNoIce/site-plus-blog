@@ -1,27 +1,23 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby" // to query for image data
-import Img from "gatsby-image" // to take image data and render it
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const AboutMe = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "images/profile-image.JPG" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  file(relativePath: {eq: "images/profile-image.JPG"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
-  `)
+  }
+}
+`)
 
   return (
     <div className="about-me-page">
-      <Img
-        fluid={data.file.childImageSharp.fluid}
+      <GatsbyImage
+        image={data.file.childImageSharp.gatsbyImageData}
         alt="My profile image"
-        className="about-me-profile-img"
-      />
+        className="about-me-profile-img" />
       <div className="about-me-text">
         <h4>Hello! I'm Jake</h4>
         <p>
@@ -34,6 +30,6 @@ const AboutMe = () => {
         </p>
       </div>
     </div>
-  )
+  );
 }
 export default AboutMe

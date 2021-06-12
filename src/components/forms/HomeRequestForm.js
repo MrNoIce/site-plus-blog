@@ -1,6 +1,6 @@
 import React from "react"
 import Button from "@material-ui/core/Button"
-import SEO from "../seo"
+import Seo from "../seo"
 import { navigate } from "gatsby-link"
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator"
 
@@ -55,7 +55,7 @@ class HomeRequestForm extends React.Component {
 
     return (
       <>
-        <SEO title="Contact" />
+        <Seo title="Contact" />
         <ValidatorForm
           onSubmit={this.handleSubmit}
           onError={errors => console.log(errors)}

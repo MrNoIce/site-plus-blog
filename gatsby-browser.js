@@ -1,7 +1,7 @@
 // custom typefaces
 import "typeface-montserrat"
 import "typeface-merriweather"
-
+import 'lazysizes'
 import "prismjs/themes/prism.css"
 
 export const onServiceWorkerUpdateReady = () => {

@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -11,7 +11,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Projects" />
+      <Seo title="Projects" />
       <div className="container">
         <div className="post-feed">
           {posts.map(({ node }) => {
@@ -23,12 +23,11 @@ const BlogIndex = ({ data, location }) => {
                 to={node.fields.slug}
               >
                 <div className="post-card-image">
-                  <Img
-                    style={{ height: "100%", width: "100%" }}
+                  <GatsbyImage
+                    image={node.frontmatter.coverPhoto.childImageSharp.gatsbyImageData}
+                    // style={{ height: "100%", width: "100%" }}
                     imgStyle={{ objectFit: "contain", borderRadius: "7px" }}
-                    fluid={node.frontmatter.coverPhoto.childImageSharp.fluid}
-                    alt={node.frontmatter.coverPhoto.name}
-                  />
+                    alt={node.frontmatter.coverPhoto.name} />
                 </div>
                 <div className="post-card-title">
                   <div className="post-card-title-time">
@@ -44,24 +43,26 @@ const BlogIndex = ({ data, location }) => {
                   </section>
                 </div>
               </Link>
-            )
+            );
           })}
         </div>
       </div>
     </Layout>
-  )
+  );
 }
 
 export default BlogIndex
 
-export const data = graphql`
-{
+export const data = graphql`{
   site {
     siteMetadata {
       title
     }
   }
-  allMdx(filter: {frontmatter: {group: {eq: "posts"}, isPublished: {eq: true}}}, sort: {fields: [frontmatter___date], order: DESC}) {
+  allMdx(
+    filter: {frontmatter: {group: {eq: "posts"}, isPublished: {eq: true}}}
+    sort: {fields: [frontmatter___date], order: DESC}
+  ) {
     edges {
       node {
         excerpt
@@ -74,9 +75,12 @@ export const data = graphql`
           coverPhoto {
             name
             childImageSharp {
-              fluid(maxHeight: 300, maxWidth: 600, cropFocus: CENTER, fit: COVER) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(
+                height: 300
+                width: 600
+                transformOptions: {cropFocus: CENTER, fit: COVER}
+                layout: CONSTRAINED
+              )
             }
           }
         }
@@ -84,5 +88,4 @@ export const data = graphql`
     }
   }
 }
-
 `
