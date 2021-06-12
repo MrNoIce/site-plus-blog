@@ -22,6 +22,8 @@ function MobileMenu() {
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
+        className="mobile-menu-button"
+        aria-label="menu navigation button dropdown"
       >
         <MenuIcon className="contact-icon" fontSize="large" />
       </Button>
@@ -33,7 +35,11 @@ function MobileMenu() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>
-          <Link className="mobile-nav-item" to="/blog">
+          <Link
+            className="mobile-nav-item"
+            to="/blog"
+            aria-label="link to blog"
+          >
             Blog
           </Link>
         </MenuItem>
@@ -43,12 +49,20 @@ function MobileMenu() {
           </Link>
         </MenuItem> */}
         <MenuItem onClick={handleClose}>
-          <Link className="mobile-nav-item" to="/resume">
+          <Link
+            className="mobile-nav-item"
+            to="/resume"
+            aria-label="link to resume"
+          >
             Resume
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link className="mobile-nav-item" to="/contact">
+          <Link
+            className="mobile-nav-item"
+            to="/contact"
+            aria-label="link to contact"
+          >
             Contact
           </Link>
         </MenuItem>
@@ -61,4 +75,4 @@ function MobileMenu() {
     </div>
   )
 }
-export default MobileMenu;
+export default MobileMenu

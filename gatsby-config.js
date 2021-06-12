@@ -15,6 +15,7 @@ module.exports = {
     pathPrefix: config.pathPrefix,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -74,9 +75,21 @@ module.exports = {
         ],
       },
     },
-    'gatsby-remark-static-images',
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    'gatsby-remark-static-images',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+          },
+          `gatsby-remark-lazy-load`,
+        ]
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -97,5 +110,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        disable: false,
+      },
+    },
   ],
 }

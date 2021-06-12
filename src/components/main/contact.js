@@ -18,12 +18,22 @@ const Contact = () => (
       }}
     >
       <li className="contact-links">
-        <a href="https://github.com/MrNoIce" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/MrNoIce"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Link to github"
+        >
           <Icon className="contact-icon" size={25} icon={github} />
         </a>
       </li>
       <li className="contact-links">
-        <a href="https://github.com/MrNoIce" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/MrNoIce"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Link to twitter"
+        >
           <Icon className="contact-icon" size={25} icon={twitter} />
         </a>
       </li>
@@ -32,6 +42,7 @@ const Contact = () => (
           href="mailto:jake.murphy.scott@gmail.com?Subject=Hello%20Jake"
           target="_blank"
           rel="noreferrer"
+          aria-label="Link to email"
         >
           <Icon className="contact-icon" size={25} icon={mail4} />
         </a>
@@ -41,6 +52,7 @@ const Contact = () => (
           href="https://www.linkedin.com/in/jakemurphyscott/"
           target="_blank"
           rel="noreferrer"
+          aria-label="Link to linkedin profile"
         >
           <Icon className="contact-icon" size={25} icon={linkedin} />
         </a>
