@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image";
-
+import Contact from "./contact"
 import { rhythm } from "../../utils/typography"
 
 const Bio = () => {
@@ -31,7 +31,6 @@ const Bio = () => {
       <div
         style={{
           display: `flex`,
-          marginBottom: rhythm(2.5),
         }}
       >
         <Link
@@ -62,6 +61,9 @@ const Bio = () => {
           <br /> {author.summary}
           {` `}
         </p>
+      </div>
+      <div className="mobile-foot-contact">
+            <Contact/>
       </div>
     </footer>
   );

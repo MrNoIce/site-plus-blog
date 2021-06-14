@@ -3,8 +3,7 @@ import Contact from "../main/contact"
 import PropTypes from "prop-types"
 import React from "react"
 import NavHead from "./nav"
-import MobileMenu from "./menu";
-
+import MobileMenu from "./menu"
 
 const Header = ({ siteTitle, siteDescription, siteBackgroundImage }) => (
   <header
@@ -15,26 +14,22 @@ const Header = ({ siteTitle, siteDescription, siteBackgroundImage }) => (
   >
     <div className="container">
       <div className="site-mast">
-        <div className="site-mast-left">
-          <Link className="site-nav" to="/about">
-            About
-          </Link>
-        </div>
-        <div className="site-mast-right">
-          <Contact />
-        </div>
-      </div>
-      <div className="site-banner">
-        <Link to="/">
-          <h1 className="site-banner-title">{siteTitle}</h1>
-        </Link>
+        <div className="site-mast-left"></div>
+        <div className="site-mast-right"></div>
       </div>
       <nav className="site-nav">
         <div className="site-nav-left">
           <NavHead />
           <MobileMenu />
         </div>
-        <div className="site-nav-right"></div>
+        <div className="site-banner">
+          <Link to="/">
+            <h1 className="site-banner-title">{siteTitle}</h1>
+          </Link>
+        </div>
+        <div className="site-nav-right">
+          <Contact />
+        </div>
       </nav>
     </div>
   </header>
