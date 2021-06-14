@@ -8,14 +8,8 @@ import "../styles/layout.css"
 
 const Contact = () => (
   <>
-    <ul
+    <div
       className="contact"
-      style={{
-        display: `flex`,
-        alignItems: `center`,
-        justifyContent: `center`,
-        padding: `.7rem 0`,
-      }}
     >
       <li className="contact-links">
         <a
@@ -57,7 +51,7 @@ const Contact = () => (
           <Icon className="contact-icon" size={25} icon={linkedin} />
         </a>
       </li>
-    </ul>
+    </div>
   </>
 )
 

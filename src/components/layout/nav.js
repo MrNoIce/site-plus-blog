@@ -18,6 +18,9 @@ const NavHead = ( props ) => {
           <Link className="site-nav-item" to="/contact">
             Contact
           </Link>
+          <Link className="site-nav-item" to="/about">
+            About
+          </Link>
           {/* <Link className="site-nav-item" to="/services">
             Services
           </Link> */}
