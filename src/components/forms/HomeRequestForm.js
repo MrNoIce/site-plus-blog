@@ -116,6 +116,16 @@ class HomeRequestForm extends React.Component {
           />
           <input name="bot-field" style={{ display: "none" }} />
           <Button
+            style={{
+              padding: 0,
+              border: "none",
+              background: "none",
+              color: "var(--color-primary)",
+              fontSize: "medium",
+              margin: "1rem",
+              outline: "none",
+              textTransform: "uppercase",
+            }}
             variant="raised"
             color="primary"
             size="large"

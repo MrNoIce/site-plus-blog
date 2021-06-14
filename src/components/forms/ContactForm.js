@@ -1,55 +1,54 @@
-import React from "react";
-import Button from "@material-ui/core/Button";
-import { navigate } from "gatsby-link";
-import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
+import React from "react"
+import Button from "@material-ui/core/Button"
+import { navigate } from "gatsby-link"
+import { TextValidator, ValidatorForm } from "react-material-ui-form-validator"
 
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+    .join("&")
 }
-
 
 class ContactForm extends React.Component {
   state = {
     name: "",
     email: "",
     message: "",
-    submitError: ""
-  };
+    submitError: "",
+  }
 
   handleChange = event => {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
+    const target = event.target
+    const value = target.value
+    const name = target.name
 
-    this.setState({ [name]: value });
-  };
+    this.setState({ [name]: value })
+  }
 
   handleNetworkError = e => {
-    this.setState({ submitError: "There was a network error." });
-  };
+    this.setState({ submitError: "There was a network error." })
+  }
 
   handleSubmit = e => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "contact", ...this.state }),
     })
       .then(() => {
-        console.log("Form submission success");
-        navigate("/success");
+        console.log("Form submission success")
+        navigate("/success")
       })
       .catch(error => {
-        console.error("Form submission error:", error);
-        this.handleNetworkError();
-      });
+        console.error("Form submission error:", error)
+        this.handleNetworkError()
+      })
 
-    e.preventDefault();
-  };
+    e.preventDefault()
+  }
 
   render() {
-    const { email, name, message, submitError } = this.state;
+    const { email, name, message, submitError } = this.state
 
     return (
       <ValidatorForm
@@ -100,6 +99,16 @@ class ContactForm extends React.Component {
         />
         <input name="bot-field" style={{ display: "none" }} />
         <Button
+          style={{
+            padding: 0,
+            border: "none",
+            background: "none",
+            color: "var(--color-primary)",
+            fontSize: "medium",
+            margin: "1rem",
+            outline: "none",
+            textTransform: "uppercase",
+          }}
           variant="raised"
           color="primary"
           size="large"
@@ -109,9 +118,8 @@ class ContactForm extends React.Component {
           Send
         </Button>
       </ValidatorForm>
-    );
+    )
   }
 }
 
-
-export default ContactForm;
+export default ContactForm
