@@ -43,6 +43,7 @@ module.exports = {
         // This config will be shared across all trackingIds
         gtagConfig: {
           anonymize_ip: true,
+          send_page_view: true,
         },
         // This object is used for configuration specific to this plugin
         pluginConfig: {
