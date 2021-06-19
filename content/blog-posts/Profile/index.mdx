@@ -9,10 +9,34 @@ date: "2021-01-16"
 template: blog-post.js
 tech: [" Gatsby ", "React ", "GraphQl ", " Material-UI ", " MDX " ]
 isPublished: true
-description: Jake Scott's blog page about the page in which the site is built in; built with Gatsby
+description: Jake Scott's blog page about the page in which the site is built in; with Gatsby
 ---
 
 One of my favorite things I learned about when building this site is the ability to add components directly into markdown pages with MDXProvider.
+
+Here is an example of using a form component directly in the mdx page
+
+```md
+- Picture/mirror hanging
+- Moving items like plants, furniture, and appliances
+- Gutter cleaning and repair
+- Internet connectivity with network issues and IOT devices
+- And just about any little annoyances that needs taken care of
+
+![Bathroom Remodel](IMG_3387.JPG)
+
+### Please fill out the form below and I will respond as soon as possible.
+
+<HomeRequestForm />
+
+### I will travel up to 30 miles from Nashville - Any further will need to be discussed
+
+*I do* ***not*** *take-on full home remodels of any type. I do, however, have trusted individuals I recommend for larger projects and can help to advise you on the best course of action for your needs.*
+
+```
+
+And here is how MDXProvider is used in place of dangerouslySetInnerHTML. This is how Gatsby accesses the available components to use in MDX.
+
 
 ```js
 return (
@@ -44,4 +68,4 @@ return (
 
 This site is built with Gatsby. A React-based, GraphQL powered, static site generator. It uses powerful preconfiguration to build a website that uses only static files for incredibly fast page loads, service workers, code splitting, server-side rendering, intelligent image loading, asset optimization, and data prefetching. I chose Gatsby so I could learn something new and get some experience with GraphQl.
 
-You can find the github repo [here](https://github.com/MrNoIce/projectsite)
+You can find the github repo [here](https://github.com/MrNoIce/site-plus-blog)
