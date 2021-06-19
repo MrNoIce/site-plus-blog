@@ -1,12 +1,19 @@
-const config = require("./content/meta/config");
+const config = require("./content/meta/config")
+
+const activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "production"
+console.log(`Using environment config: '${activeEnv}'`)
+require("dotenv").config({
+  path: `.env.${activeEnv}`,
+})
 
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://www.jakescott.dev',
+  URL: NETLIFY_SITE_URL = "https://www.jakescott.dev",
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env
-const isNetlifyProduction = NETLIFY_ENV === 'production'
+const isNetlifyProduction = NETLIFY_ENV === "production"
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
@@ -26,6 +33,25 @@ module.exports = {
   },
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          process.env.GOOGLE_ANALYTICS_ID, // Google Analytics / GA
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+        },
+      },
+    },
     `gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -89,7 +115,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    'gatsby-remark-static-images',
+    "gatsby-remark-static-images",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -98,8 +124,8 @@ module.exports = {
             resolve: `gatsby-remark-images`,
           },
           `gatsby-remark-lazy-load`,
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
