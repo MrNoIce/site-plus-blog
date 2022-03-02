@@ -7,7 +7,7 @@ const NavHead = ( props ) => {
       <div className="nav-container">
         <div className="nav-list">
           <Link className="site-nav-item" to="/blog">
-            Blog
+            Assets
           </Link>
           {/* <Link className="site-nav-item" to="/projects">
             Projects

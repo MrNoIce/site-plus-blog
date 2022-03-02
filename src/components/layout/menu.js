@@ -40,7 +40,7 @@ function MobileMenu() {
             to="/blog"
             aria-label="link to blog"
           >
-            Blog
+            Assets
           </Link>
         </MenuItem>
         {/* <MenuItem onClick={handleClose}>
