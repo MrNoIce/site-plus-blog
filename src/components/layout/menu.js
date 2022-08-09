@@ -5,6 +5,8 @@ import Menu from "@material-ui/core/Menu"
 import MenuItem from "@material-ui/core/MenuItem"
 import MenuIcon from "@material-ui/icons/Menu"
 
+//mobile nav menu
+
 function MobileMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null)
 
@@ -34,18 +36,13 @@ function MobileMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>
+        {/* <MenuItem onClick={handleClose}>
           <Link
             className="mobile-nav-item"
             to="/blog"
             aria-label="link to blog"
           >
             Assets
-          </Link>
-        </MenuItem>
-        {/* <MenuItem onClick={handleClose}>
-          <Link className="mobile-nav-item" to="/projects">
-            Projects
           </Link>
         </MenuItem> */}
         <MenuItem onClick={handleClose}>

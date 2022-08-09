@@ -8,22 +8,18 @@ description: Resume
 isPublished: false
 ---
 
-<center>
+<div style="text-align: center">
 <a target="_blank" rel="noopener noreferrer" href="https://jakescott.dev">JakeScott.dev</a>
 &nbsp; &nbsp; | &nbsp; &nbsp; 615-626-4710  &nbsp; &nbsp; | &nbsp; &nbsp;
-<a href="mailto:jake.murphy.scott@gmail.com"> jake.murphy.scott@gmail.com</a> <br />
-</center>
+<a style="text-align: right" href="mailto:jake.murphy.scott@gmail.com"> jake.murphy.scott@gmail.com</a> <br />
+</div>
 
 ---
 
 **JourneyPure | Admissions Coordinator** | *June 2020 : December 2020*
-<p> handle
-- Handle new inquiries for admissions to JourneyPure Outpatient
-Programs
-<br />- Maintained admission guidelines by developing and updating admission policies
-<br />
-- Operational and administrative duties necessary to complete each
-admission
+<p>- Managed new inquiries for admissions to JourneyPure Outpatient Programs <br />
+- Maintained admission guidelines by developing and updating admission policies <br />
+- Operational and administrative duties necessary to complete each admission
 </p>
 
 **Nashville Software School | Full Stack Software Developer** | *May 2019 : November 2019*

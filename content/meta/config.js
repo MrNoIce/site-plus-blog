@@ -16,8 +16,8 @@ module.exports = {
   infoTitle: "jake scott",
   infoTitleNote: "portfolio",
   // manifest.json
-  manifestName: "PersonalBlog - a blog to show my work",
-  manifestShortName: "PersonalBlog", // max 12 characters
+  manifestName: "Jake Scott's Blog",
+  manifestShortName: "Jake's Blog", // max 12 characters
   manifestStartUrl: "/",
   manifestBackgroundColor: "#ffffff",
   manifestThemeColor: "#ffffff",
