@@ -6,6 +6,8 @@ import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
+//This component is what takes the MDX data and renders it into a page for each blog post.
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.mdx
   const siteTitle = data.site.siteMetadata.title
@@ -44,7 +46,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           }}
         />
       </article>
-
       <nav>
         <ul
           style={{

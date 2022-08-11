@@ -43,7 +43,6 @@ const PageTemplate = ({ data, location }) => {
           }}
         />
       </article>
-
     </Layout>
   )
 }
