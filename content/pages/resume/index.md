@@ -8,6 +8,9 @@ description: Resume
 isPublished: false
 ---
 
+<!-- To update resume pdf, inside the Markdown file, Press F1 or Ctrl+Shift+P, Type export and select pdf -->
+
+<div style="text-align: center">Jake Scott</div>
 <div style="text-align: center">
 <a target="_blank" rel="noopener noreferrer" href="https://jakescott.dev">JakeScott.dev</a>
 &nbsp; &nbsp; | &nbsp; &nbsp; 615-626-4710  &nbsp; &nbsp; | &nbsp; &nbsp;
