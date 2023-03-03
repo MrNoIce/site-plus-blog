@@ -19,31 +19,40 @@ isPublished: false
 
 ---
 
-**JourneyPure | Admissions Coordinator** | *June 2020 : December 2020*
+<!-- **JourneyPure | Admissions Coordinator** | *June 2020 : December 2020*
 <p>- Managed new inquiries for admissions to JourneyPure Outpatient Programs <br />
 - Maintained admission guidelines by developing and updating admission policies <br />
 - Operational and administrative duties necessary to complete each admission
+</p> -->
+
+**Real Estate Investing and Remodeling | March 2019 - Current:**
+<p>
+- Conducted market research and financial analysis to identify profitable properties
+- <br />
+- Managed all aspects of the renovation process, including budgeting, & subcontractor coordination <br />
+- Installed modern and stylish fixtures, increasing the appeal and resale value of the properties <br />
+- Completed high quality projects on time and within budget
 </p>
 
 **Nashville Software School | Full Stack Software Developer** | *May 2019 : November 2019*
 <p>
-- Using React, Javascript, CSS, and HTML, built browser-based single page applications <br />
-- Source code version control via Git/GitHub and managing with GitHub projects <br />
-- JavaScript fundamentals using dry, modular code and reusable components <br />
-- Experience using Bootstrap, Semantic UI, Jquery, and CSS to style web applications <br />
-- Leverage SQL to build and interact with databases <br />
-- Utilize Python and Django to build web applications and Django REST to build API’s <br />
-- Agile development through group projects reflecting real-world business problems <br />
+- Built browser-based single page applications using React, Javascript, CSS, and HTML  <br />
+- Utilized Git/GitHub for source code version control and managing with GitHub projects  <br />
+- Applied JavaScript fundamentals to write dry, modular code and reusable components  <br />
+- Styled web applications using Bootstrap, Semantic UI, Jquery, and CSS  <br />
+- Developed web applications using Python and Django, and built APIʼs using Django REST  <br />
+- Collaborated on group projects reflecting real-world business problems using Agile development <br />
+- Built and interacted with databases using SQL <br />
 </p>
 
 **Murphy’s Motor Works | Owner** | *August 2013 : March 2019*
 
 <p>
-- Ecm tuning and reflashing with eeprom and flash memory <br />
-- NiCad and Lithium-ion battery rebuilding and balancing <br />
-- Modified shop router with Raspberry Pi, leveraging PiHole for an ad-free YouTube channel <br />
-- Diagnosis and repair of multiplex 12vdc electrical systems with OE and aftermarket interface <br />
-- Wired CAT5/CAT6 surveillance/networking systems and 3 phase 220v machinery <br />
+- Tuned and reflashed ECMs with eeprom and flash memory  <br />
+- Rebuilt and balanced NiCad and Lithium-ion batteries  <br />
+- Modified shop router with Raspberry Pi and PiHole for ad-free YouTube channel  <br />
+- Diagnosed and repaired multiplex 12vdc electrical systems with OE and aftermarket interface  <br />
+- Wired CAT5/CAT6 surveillance/networking systems and 3 phase 220v machinery  <br />
 - Acquired an Auto dealers license; bought, listed, and sold vehicles <br />
 - Managed employees, accounted for taxes and payroll with Quickbooks <br />
 - Built customer relations, Income and expense accounts, managed parts and supplies <br />
@@ -61,19 +70,18 @@ isPublished: false
 <p>
 - Maintained and operated complex machines including the crankshaft grinder, boring, milling, honing, line boring, and valve grinding machines <br />
 - Developed their welding and fabrication department <br />
-- Creative problem solving through the machining process <br />
-- Handled customer relations specific to my specialities<br />
 </p>
 
-### Education
+**Education**
 
-**Nashville State Community College | Mechanical Engineering | Jan 2020 - Current** <br />
+**Tennessee State University | Bachelor of Science in Mechanical Engineering | Jan 2023 - May 2025** <br />
+**Nashville State Community College | Mechanical Engineering | Jan 2020 - May 2023** <br />
 **Nashville Software School | Full Stack Software Engineer | 2019** <br />
 **Nashville Auto Diesel College | Automotive Repair and Diesel Specialties | 2010**
 
 ---
 
 <center>
-<a href="index.pdf" target="_blank">download this page</a>
+<a href="index.pdf" target="_blank">View as PDF</a>
 </center>
 
