@@ -10,11 +10,11 @@ isPublished: false
 
 <!-- To update resume pdf, inside the Markdown file, Press F1 or Ctrl+Shift+P, Type export and select pdf -->
 
-<div style="text-align: center">Jake Scott</div>
+<!-- <div style="text-align: center; font-size: 19px">Jake Scott</div> -->
 <div style="text-align: center">
-<a target="_blank" rel="noopener noreferrer" href="https://jakescott.dev">JakeScott.dev</a>
-&nbsp; &nbsp; | &nbsp; &nbsp; 615-626-4710  &nbsp; &nbsp; | &nbsp; &nbsp;
-<a style="text-align: right" href="mailto:jake.murphy.scott@gmail.com"> jake.murphy.scott@gmail.com</a> <br />
+
+<div style="text-align: center" > Jake Scott  &nbsp; &nbsp; | &nbsp; &nbsp; <a style="text-align: right" href="mailto:jake.murphy.scott@gmail.com"> jake.murphy.scott@gmail.com</a>  &nbsp; &nbsp; | &nbsp; &nbsp; <a target="_blank" rel="noopener noreferrer" href="https://jakescott.dev">JakeScott.dev</a>
+ </div>
 </div>
 
 ---
@@ -25,10 +25,9 @@ isPublished: false
 - Operational and administrative duties necessary to complete each admission
 </p> -->
 
-**Real Estate Investing and Remodeling | March 2019 - Current:**
+**Real Estate Investing and Remodeling** | *March 2019 : Current*
 <p>
-- Conducted market research and financial analysis to identify profitable properties
-- <br />
+- Conducted market research and financial analysis to identify profitable properties <br />
 - Managed all aspects of the renovation process, including budgeting, & subcontractor coordination <br />
 - Installed modern and stylish fixtures, increasing the appeal and resale value of the properties <br />
 - Completed high quality projects on time and within budget
