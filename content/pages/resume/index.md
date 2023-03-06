@@ -73,8 +73,8 @@ isPublished: false
 
 **Education**
 
-**Tennessee State University | Bachelor of Science in Mechanical Engineering | Jan 2023 - May 2025** <br />
-**Nashville State Community College | Mechanical Engineering | Jan 2020 - May 2023** <br />
+**Tennessee State University | BS in Mechanical Engineering | Jan 2023 - May 2025** <br />
+**Nashville State Community College | AS in Mechanical Engineering | Jan 2020 - May 2023** <br />
 **Nashville Software School | Full Stack Software Engineer | 2019** <br />
 **Nashville Auto Diesel College | Automotive Repair and Diesel Specialties | 2010**
 
