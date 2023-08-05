@@ -33,6 +33,13 @@ isPublished: false
 - Completed high quality projects on time and within budget
 </p>
 
+**Research Intern, Fisk University** | *Summer 2023*
+<p>
+- Developed and implemented an algorithm to analyze raw data, enhancing data processing capabilities. <br />
+- Conducted in-depth research on scintillator crystals and their applications in radiation detection. <br />
+- Contributed to the design and construction of a modular electronic radiation detection device.
+</p>
+
 **Nashville Software School | Full Stack Software Developer** | *May 2019 : November 2019*
 <p>
 - Built browser-based single page applications using React, Javascript, CSS, and HTML  <br />
