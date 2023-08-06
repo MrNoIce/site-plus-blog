@@ -99,7 +99,7 @@ The research contributes valuable insights into Nal:Tl scintillator crystals' pe
 
 
 **ACKNOWLEDGMENTS**
-The authors acknowledge the invaluable support provided by Fisk University, the US National Science Foundation (Grant No. HRD-2112556), and Defense Threat Reduction Agency Interaction of Ionizing Radiation with Matter University Research Alliance (DTRA IIRM URA) Cooperative Agreement (HDTRA1-20-2-0002). We extend our gratitude to Dr. R. Hawrami, Dr. E. Ariesante, Dr. L. Matei, and Dr. A. Burger from [Fisk University][def], as well as Dr. Bir Bohara from [Nashville State Community College](https://www.nscc.edu/news/research-summer-for-nashville-state-stem-group.php), for their guidance and assistance during this research.
+The authors acknowledge the invaluable support provided by Fisk University, the US National Science Foundation (Grant No. HRD-2112556), and Defense Threat Reduction Agency Interaction of Ionizing Radiation with Matter University Research Alliance (DTRA IIRM URA) Cooperative Agreement (HDTRA1-20-2-0002). Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of Fisk University, the U.S. National Science Foundation, or Defense Threat Reduction Agency. We extend our gratitude to Dr. R. Hawrami, Dr. E. Ariesanti, Dr. L. Matei, and Dr. A. Burger from [Fisk University][def], as well as Dr. Bir Bohara from [Nashville State Community College](https://www.nscc.edu/news/research-summer-for-nashville-state-stem-group.php), for their guidance and assistance during this research.
 
 **REFERENCES**  
 [1] C.D. Zerby, A. Meyer, R.B. Murray,

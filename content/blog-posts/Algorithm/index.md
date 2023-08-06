@@ -71,11 +71,9 @@ end
 %Sorting, reshaping, and determining the size of a matrix
 
 % Replace the path name after the load fn with the path to your data
-%load naitl/tlyc_mg2_11k_cs_2300404_001_wf_0.dat 
 load naitl/naitl_1x1_001_wf_0.dat
 
 % Replace the file name with the name of your file above
-%Data = tlyc_mg2_11k_cs_2300404_001_wf_0
 Data = naitl_1x1_001_wf_0
 
 % Create the size of the new matrix using the find_consecutive_numbers() fn
