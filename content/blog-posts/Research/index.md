@@ -77,7 +77,7 @@ The research employed a series of instruments, including the Ortec 556 High Volt
 
 **<center>Testing equipment</center>**
 
-![Testing Equipment](TestingEquipment.png)
+![Testing Equipment Diagram](TestingEquipmentDiagram.jpg)
 
 ### C. Nal:Tl Results
 The initial test revealed a 10.3% resolution and 89% light yield, while the second test demonstrated an improved 8.3% resolution but a slightly reduced 84% light yield. Further investigations are required to understand the decline in light yield. The decay time of 241 microseconds aligned with typical Nal:Tl scintillators.
