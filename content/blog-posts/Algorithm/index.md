@@ -149,7 +149,7 @@ writematrix(zeroed, 'zeroed_naitl.txt')
 
 **Results-4:** In order to find the actual decay time, we had to plug the results of the algorithm into the [OriginPro](https://www.originlab.com/) software and use their exponential fit function to find the decay constant. As shown in the graph, the value of t1 shows a decay time of 244 microseconds; which is in the normal range for Nal:Tl.
 
-![Nal:Tl Decay time](NalTlDecayTime.png)
+![NalTl Decay time](NalTlDecayTime.png)
 
 **Conclusion:**
 During my internship at Fisk University, I successfully solved a crucial problem in data analysis – reshaping matrices with varying shapes for calculating decay time. The algorithm I developed streamlines matrix manipulation, providing a seamless and adaptable solution. This experience has deepened my understanding of data analysis techniques and ignited my passion for pushing the boundaries of data science. Looking ahead, I am eager to continue exploring innovative solutions to complex problems in the dynamic field of data analysis.
