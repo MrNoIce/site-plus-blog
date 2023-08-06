@@ -51,24 +51,68 @@ The Bridgman method involved gradually lowering the ampoules into an oven with v
 ### C. Material Preparation (Cutting, Polishing, and Wrapping)
 Nal:Tl crystals, being hygroscopic, required careful handling in an inert environment. After cutting them into trapezoidal shapes using a diamond wire saw, the crystals were polished with descending grits of sandpaper to achieve a surface delta of 2-4 microns. To ensure maximum light yield, each crystal was wrapped in Teflon with a thickness of at least 1.04mm.
 
+**<center>Nal:Tl before polishing</center>**
+
+![Nal:Tl Before Polishing](RawNalTl.jpeg)
+
+**<center>Jacob and I exercising our fingers</center>**
+
+![Jacob and Jake Polishing](JacobAndJakePolishing.JPG)
+
+**<center>Final results</center>**
+
+![Nal:Tl After Polishing](NalTlAfterPolishing.JPEG)
+
+**<center>Teflon wrapped on PMT</center>**
+
+![Teflon wrapped on PMT](TestingScintillatorOnPMT.jpg)
+
 ## III. Results and Analysis
 
-### A. Ideal Scintillators
+### A. Ideal scintillators
 Energy resolution, light yield, non-proportionality, and decay time were essential characteristics assessed during the research. Energy resolution was determined using the Full Width Half Maximum (FWHM) of full energy peaks. Light yield was calculated by comparing the max heights of full energy peaks for the tested scintillator and a control. Non-proportionality was found by exposing the scintillator to various gamma energies and comparing the normalized data to a relative light yield of 1 from a cesium 137 source tested control. Decay time was measured in microseconds through oscilloscope analysis.
 
 ### B. Testing
 The research employed a series of instruments, including the Ortec 556 High Voltage Power Supply, photomultiplier tubes coupled with optical grease, a Canberra model 2005 pre-amplifier, and an Ortec 671 amplifier. The signal was then fed to a Canberra Multiport 2 channel MCA, with a Tektronix TDS 380 oscilloscope providing a visual representation. Data analysis utilized OriginPro software and a custom [Matlab algorithm](../Algorithm/) to calculate decay time constants.
 
+**<center>Testing equipment</center>**
+
+![Testing Equipment](TestingEquipment.png)
+
 ### C. Nal:Tl Results
 The initial test revealed a 10.3% resolution and 89% light yield, while the second test demonstrated an improved 8.3% resolution but a slightly reduced 84% light yield. Further investigations are required to understand the decline in light yield. The decay time of 241 microseconds aligned with typical Nal:Tl scintillators.
+
+**<center>Results of light yeild and energy resolution</center>**
+
+![Light Yeild and Energy Resolution](results.png)
+
+**<center>Results of non-proportionality</center>**
+
+![Results of non-proportionality](resultsNonProportionality.png)
+
+**<center>Results of decay time</center>**
+
+![Results of Decay Time](NalTlDecayTime.png)
 
 ## IV. Conclusions
 The research contributes valuable insights into Nal:Tl scintillator crystals' performance for radiation detection. The characterized scintillators demonstrate potential for diverse technological applications. By identifying key parameters such as energy resolution, light yield, non-proportionality, and decay time, we pave the way for the development of superior scintillator compounds. These findings will drive advancements in medical imaging, space exploration, and homeland security technologies.
 
-![Insert graphs or images of results and testing equipment here]
 
 **ACKNOWLEDGMENTS**
-The authors acknowledge the invaluable support provided by Fisk University, the US National Science Foundation (Grant No. HRD-2112556), and Defense Threat Reduction Agency Interaction of Ionizing Radiation with Matter University Research Alliance (DTRA IIRM URA) Cooperative Agreement (HDTRA1-20-2-0002). We extend our gratitude to Dr. R. Hawrami, Dr. E. Ariesante, Dr. L. Matei, and Dr. A. Burger from Fisk University, as well as Dr. Bir Bohara from Nashville State Community College, for their guidance and assistance during this research.
+The authors acknowledge the invaluable support provided by Fisk University, the US National Science Foundation (Grant No. HRD-2112556), and Defense Threat Reduction Agency Interaction of Ionizing Radiation with Matter University Research Alliance (DTRA IIRM URA) Cooperative Agreement (HDTRA1-20-2-0002). We extend our gratitude to Dr. R. Hawrami, Dr. E. Ariesante, Dr. L. Matei, and Dr. A. Burger from [Fisk University][def], as well as Dr. Bir Bohara from [Nashville State Community College](https://www.nscc.edu/news/research-summer-for-nashville-state-stem-group.php), for their guidance and assistance during this research.
 
-**REFERENCES**
-[Include the list of references as per the journal's citation style]
+**REFERENCES**  
+[1] C.D. Zerby, A. Meyer, R.B. Murray,
+Intrinsic line broadening in NaI(Tl) gamma-ray spectrometers,
+Nuclear Instruments and Methods,
+Volume 12,
+1961,
+Pages 115-123,
+ISSN 0029-554X,
+https://doi.org/10.1016/0029-554X(61)90119-7.  
+
+
+
+
+
+[def]: https://www.fisk.edu/bioss/

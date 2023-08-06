@@ -9,16 +9,16 @@ date: "2023-05-08"
 template: blog-post.js
 tech: [" Matlab ", "Physics ", "Scintillators", " Gamma-Rays ", " Radiaton " ]
 isPublished: true
-description: Building an algorithm for data analysis of raw data to calculate decay time of Nal:Tl scintillators
+description: Building an algorithm to calculate decay time of Nal:Tl scintillators
 ---
 
 **Reshaping Matrices with Precision: A Dynamic Algorithm**
 
 **Introduction:**
-In the world of data analysis, matrices serve as foundational structures for countless applications. However, working with matrices of varying shapes can be a formidable challenge, often requiring time-consuming manual adjustments. During my internship at Fisk University, I was tasked to solve this very problem to find the decay time of light emitted when gamma-rays from the cesium-137 pass through the scintillator. I set out to design a dynamic algorithm that would reshape matrices, preserving the integrity of the data. The data was collected by connecting the anode from PMT directly into the digitizer to get the raw data in the shape of N x 2.
+During my [internship at Fisk University](../Research/), I worked on a crucial challenge in data analysis – finding the decay time of light emitted when gamma-rays from cesium-137 interact with scintillator crystals. The raw data was collected in the form of an N x 2 matrix by connecting the anode from the photomultiplier tube (PMT) directly to the digitizer. To address the issue of reshaping matrices efficiently, I designed a dynamic algorithm that preserves data integrity.
 
 **Understanding the Challenge:**
-The fundamental issue revolved around reshaping matrices with a N x 2 shape with the first column being the channel number and the second column being the energy spectra. The channel numbers would have the same starting and ending points but would be repeated based on the number of tests that would be conducted. I needed to extract the amount of channel numbers as well as how many times the consecutive channel numbers repeated while maintaining the corresponding energy spectra associated with each channel number. Then align the corresponding energy spectra with the amount of tests that ran into a new matrix. Traditional methods, such as basic resizing in excel, proved to be inefficient and cumbersome, requiring manual adjustments for each matrix. This called for a more intelligent approach – a dynamic algorithm that could adapt seamlessly to the unique dimensions of any given matrix.
+The fundamental challenge involved reshaping matrices with an N x 2 shape, where the first column represented channel numbers, and the second column contained energy spectra. The channel numbers were repeated based on the number of tests conducted. The goal was to extract the channel numbers and the number of consecutive repetitions while retaining the corresponding energy spectra. Manual adjustments and traditional resizing methods in Excel proved cumbersome and inefficient for each matrix. To overcome this, I developed a dynamic algorithm capable of intelligently adapting to the unique dimensions of any given matrix, streamlining the reshaping process.
 
 1. **Finding Consecutive Numbers:** 
 The `find_consecutive_numbers` function is a MATLAB function designed to identify consecutive sequences in the first column of a given matrix. It calculates the length of the first consecutive sequence and the total count of consecutive sequences. This information is crucial for determining the number of channel numbers in the data as well as how many tests were performed; this will tell us the size of the new matrix.
@@ -152,6 +152,6 @@ writematrix(zeroed, 'zeroed_naitl.txt')
 ![Nal:Tl Decay time](NalTlDecayTime.png)
 
 **Conclusion:**
-Through my internship at Fisk University, I had the opportunity to solve a critical problem in data analysis – reshaping matrices with varying shapes. The algorithm I developed eases the way matrices are handled, offering a seamless and adaptable solution to the challenges of calculating decay time. This experience has not only deepened my understanding of advanced matrix manipulation but has also fueled my passion for pushing the boundaries of data science. As I look to the future, I am excited to continue exploring innovative solutions to complex problems in the ever-evolving world of data analysis.
+During my internship at Fisk University, I successfully solved a crucial problem in data analysis – reshaping matrices with varying shapes for calculating decay time. The algorithm I developed streamlines matrix manipulation, providing a seamless and adaptable solution. This experience has deepened my understanding of data analysis techniques and ignited my passion for pushing the boundaries of data science. Looking ahead, I am eager to continue exploring innovative solutions to complex problems in the dynamic field of data analysis.
 
 
