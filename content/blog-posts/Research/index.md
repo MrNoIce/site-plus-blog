@@ -42,6 +42,12 @@ To grow Nal:Tl scintillator crystals, Ge214-infused quartz glass ampoules were u
 ### B. Bridgman Method
 The Bridgman method involved gradually lowering the ampoules into an oven with varying heating zones. The melting point (600-700 degrees Celsius) facilitated the formation of crystal seeds, while the cooling zone (approximately 300 degrees Celsius) allowed for the crystalline structure's growth. Annealing relieved stresses within the crystals, ensuring optimal performance.
 
+<p align="center">
+  <img src="bridgmanMethod.gif" alt="Bridgman Method" />
+</p>
+
+**<center>https://guedel.dcb.unibe.ch/research/hug_cry_movie.htm</center>**
+
 ### C. Material Preparation (Cutting, Polishing, and Wrapping)
 Nal:Tl crystals, being hygroscopic, required careful handling in an inert environment. After cutting them into trapezoidal shapes using a diamond wire saw, the crystals were polished with descending grits of sandpaper to achieve a surface delta of 2-4 microns. To ensure maximum light yield, each crystal was wrapped in Teflon with a thickness of at least 1.04mm.
 
