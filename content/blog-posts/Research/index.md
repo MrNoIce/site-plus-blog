@@ -27,6 +27,18 @@ Scintillator crystals have been instrumental in radiation detection since their 
 ### A. Ampoules
 To grow Nal:Tl scintillator crystals, Ge214-infused quartz glass ampoules were utilized, providing a high melting point ideal for the growth process. Ampoules were prepared by heating solid quartz tubes with an oxygen-hydrogen torch to form a long tip, cone, and base, which facilitated crystal seed formation.
 
+**<center>The glass lathed used to form the cone tip of the ampules</center>**
+
+![Glass Lathe](glassLathe.jpeg)
+
+**<center>After forming</center>**
+
+![Quartz Ampule](ampule.jpeg)
+
+**<center>Cone detail</center>**
+
+![Quartz Ampule close up after forming](ampuleClose.jpeg)
+
 ### B. Bridgman Method
 The Bridgman method involved gradually lowering the ampoules into an oven with varying heating zones. The melting point (600-700 degrees Celsius) facilitated the formation of crystal seeds, while the cooling zone (approximately 300 degrees Celsius) allowed for the crystalline structure's growth. Annealing relieved stresses within the crystals, ensuring optimal performance.
 
