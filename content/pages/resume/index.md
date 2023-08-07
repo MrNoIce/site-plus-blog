@@ -27,10 +27,9 @@ isPublished: false
 
 **Real Estate Investing and Remodeling** | *March 2019 : Current*
 <p>
+- Completed high quality projects on time and within budget; increasing resale value by 50% <br />
 - Conducted market research and financial analysis to identify profitable properties <br />
-- Managed all aspects of the renovation process, including budgeting, & subcontractor coordination <br />
-- Installed modern and stylish fixtures, increasing the appeal and resale value of the properties <br />
-- Completed high quality projects on time and within budget
+- Managed all aspects of the renovation process, including budgeting, & subcontractor coordination 
 </p>
 
 **Research Intern, Fisk University** | *Summer 2023*
@@ -47,9 +46,10 @@ isPublished: false
 - Applied JavaScript fundamentals to write dry, modular code and reusable components  <br />
 - Styled web applications using Bootstrap, Semantic UI, Jquery, and CSS  <br />
 - Developed web applications using Python and Django, and built APIʼs using Django REST  <br />
-- Collaborated on group projects reflecting real-world business problems using Agile development <br />
 - Built and interacted with databases using SQL <br />
 </p>
+
+<!-- - Collaborated on group projects reflecting real-world business problems using Agile development <br /> -->
 
 **Murphy’s Motor Works | Owner** | *August 2013 : March 2019*
 
@@ -74,11 +74,11 @@ isPublished: false
 
 **USA Motor and Machine | Machinest/Import Specialist** | *January 2009 : January 2012*
 <p>
-- Maintained and operated complex machines including the crankshaft grinder, boring, milling, honing, line boring, and valve grinding machines <br />
-- Developed their welding and fabrication department <br />
+- Maintained and operated complex machines including the crankshaft grinder, milling, honing, line boring machines <br />
+- Developed their welding and fabrication department, enhancing the overall capabilities of the company.
 </p>
 
-**Education**
+**Education & Skills:** *Python, JavaScript, React, Django, HTML, CSS, SQL, Matlab, AutoCAD, SolidWorks, Git/GitHub* 
 
 **Tennessee State University | BS in Mechanical Engineering | Jan 2023 - May 2025** <br />
 **Nashville State Community College | AS in Mechanical Engineering | Jan 2020 - May 2023** <br />
