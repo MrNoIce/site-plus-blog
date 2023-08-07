@@ -2,7 +2,7 @@
 title: Our City App
 subTitle: Creat Read Update Destroy
 category: "software development"
-coverPhoto: avatar.jpg
+coverPhoto: jssnapshot.jpg
 path: "/Our-City"
 group: posts
 date: "2021-12-16"
