@@ -7,7 +7,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMdx {
+        allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
           edges {
             node {
               fields {
@@ -16,6 +16,7 @@ exports.createPages = async ({ graphql, actions }) => {
               frontmatter {
                 title
                 template
+                group
               }
             }
           }
@@ -28,24 +29,23 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
 
-  // Create blog posts and pages.
-  const posts = result.data.allMdx.edges
+  const pages = result.data.allMdx.edges
 
-  posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
+  pages.forEach(({ node }, index) => {
+    const previous = index === pages.length - 1 ? null : pages[index + 1].node
+    const next = index === 0 ? null : pages[index - 1].node
 
-    createPage({
-      path: post.node.fields.slug,
-      component: path.resolve(
-        `src/templates/${post.node.frontmatter.template}`
-      ),
-      context: {
-        slug: post.node.fields.slug,
-        previous,
-        next,
-      },
-    })
+    if (node.frontmatter.group === "posts" || node.frontmatter.group === "pages") {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`src/templates/${node.frontmatter.template}`),
+        context: {
+          slug: node.fields.slug,
+          previous: previous && previous.frontmatter.group === "posts" ? previous : null,
+          next: next && next.frontmatter.group === "posts" ? next : null,
+        },
+      })
+    }
   })
 }
 

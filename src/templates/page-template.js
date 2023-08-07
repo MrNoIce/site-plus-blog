@@ -1,14 +1,25 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React ,{ useEffect }from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import { graphql } from "gatsby"
 
 const PageTemplate = ({ data, location }) => {
-  const page = data.mdx
-  const siteTitle = data.site.siteMetadata.title
+  const page = data.mdx;
+  const siteTitle = data.site.siteMetadata.title;
+
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
+  // Scroll to top when component mounts or when next/previous links are clicked
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -50,12 +61,7 @@ const PageTemplate = ({ data, location }) => {
 export default PageTemplate
 
 export const pageQuery = graphql`
-  query dataPage($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+  query PageQuery($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
@@ -63,6 +69,11 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }

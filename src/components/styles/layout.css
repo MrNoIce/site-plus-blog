@@ -289,13 +289,10 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   font-size: 62.5%;
-  background: var(--color-base);
-
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-  overflow-x: hidden;
   color: #3c484e;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -315,7 +312,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow: auto;
 }
 body {
   margin: 0;
