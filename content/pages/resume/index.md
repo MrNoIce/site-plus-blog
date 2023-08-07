@@ -74,7 +74,7 @@ isPublished: false
 
 **USA Motor and Machine | Machinest/Import Specialist** | *January 2009 : January 2012*
 <p>
-- Maintained and operated complex machines including the crankshaft grinder, milling, honing, line boring machines <br />
+- Maintained and operated machines including the crankshaft grinder, milling, honing, line boring machines <br />
 - Developed their welding and fabrication department, enhancing the overall capabilities of the company.
 </p>
 
