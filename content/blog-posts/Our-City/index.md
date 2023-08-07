@@ -8,7 +8,7 @@ group: posts
 date: "2021-12-16"
 template: blog-post.js
 tech: [" React ", "MapBox ", "JSON ", "Bootstrap"]
-isPublished: false
+isPublished: true
 description: An application to communicate infrastructure issues to the city built with reactjs
 ---
 
