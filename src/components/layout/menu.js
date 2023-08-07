@@ -36,15 +36,15 @@ function MobileMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        {/* <MenuItem onClick={handleClose}>
+        <MenuItem onClick={handleClose}>
           <Link
             className="mobile-nav-item"
-            to="/blog"
+            to="/"
             aria-label="link to blog"
           >
-            Assets
+            Blog
           </Link>
-        </MenuItem> */}
+        </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link
             className="mobile-nav-item"

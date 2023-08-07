@@ -7,7 +7,10 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMdx {
+        allMdx(
+          filter: { frontmatter: { template: { eq: "blog-post.js" } } }
+          sort: { fields: frontmatter___date, order: DESC }
+        ) {
           edges {
             node {
               fields {
@@ -37,9 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: post.node.fields.slug,
-      component: path.resolve(
-        `src/templates/${post.node.frontmatter.template}`
-      ),
+      component: path.resolve(`src/templates/${post.node.frontmatter.template}`),
       context: {
         slug: post.node.fields.slug,
         previous,
@@ -48,6 +49,8 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+
+
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
