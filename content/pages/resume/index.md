@@ -56,7 +56,7 @@ isPublished: false
 <p class="resume-content">
     - Completed high quality projects on time and within budget; increasing resale value by 50% <br />
     - Conducted market research and financial analysis to identify profitable properties <br />
-    - Managed all aspects of the renovation process, including budgeting, & subcontractor coordination. 
+    - Managed all aspects of the renovation process, including budgeting, & subcontractor coordination
 </p>
 
 <div class="title-company">
@@ -69,9 +69,9 @@ isPublished: false
 </div> 
 
 <p class="resume-content">
-    - Developed and implemented an algorithm to analyze raw data, enhancing data processing capabilities. <br />
-    - Conducted in-depth research on scintillator crystals and their applications in radiation detection. <br />
-    - Contributed to the design and construction of a modular electronic radiation detection device.
+    - Developed and implemented an algorithm to analyze raw data, enhancing data processing efficiency <br />
+    - Conducted in-depth research on scintillator crystals and their applications in radiation detection <br />
+    - Contributed to the design and construction of a modular electronic radiation detection device
 </p>
 
 <div class="title-company">
@@ -138,7 +138,7 @@ isPublished: false
 
 <p class="resume-content">
     - Maintained and operated machines including the crankshaft grinder, milling, honing, line boring machines <br />
-    - Developed their welding and fabrication department, enhancing the overall capabilities of the company.
+    - Developed their welding and fabrication department, enhancing the overall capabilities of the company
 </p>
 
 <p class="skills">
