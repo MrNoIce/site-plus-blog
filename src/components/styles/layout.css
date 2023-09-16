@@ -1017,6 +1017,27 @@ form {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   touch-action: manipulation;
 }
+/* Resume
+/* ---------------------------------------------------------- */
+/* The media querry below wont work due to inline styling. Inline 
+styling must stay until the PDF can be converted without the use
+of inline styling - may need to use a different converter - or
+properly hook up the style sheet with the pdf converter*/
+@media (min-width: 500px) {
+  .city-duration {
+    float: right;
+  }
+  }
+@media (max-width: 500px) {
+.city-duration {
+  font-style: italic;
+}
+}
+@media (max-width: 500px) {
+.resume-content{
+  display: inline-block;
+}
+}
 
 /* Tag Archives
 /* ---------------------------------------------------------- */

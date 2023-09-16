@@ -1,5 +1,5 @@
 ---
-title: Résumé
+resume-title: Résumé
 menuTitle: résumé
 path: "/pages/resume/"
 group: pages
@@ -10,30 +10,23 @@ isPublished: false
 
 <!-- To update resume pdf, inside the Markdown file, Press F1 or Ctrl+Shift+P, Type export and select pdf -->
 
-<head>
-<style>
-    h3 {
-        "clear: both;" 
-    }
-    .title-company {
-        "overflow: auto;",
-        "text-align: left;"
-    }
-    .resume-content {
-        "clear: both;",
-        "font-size: 12px;",
-        "margin: 0px;",
-        "padding: 0px;"
-    }
-    .skills {
-        "font-size: 12px;"    
-    }
-</style>
-</head>
-
-<div style="text-align: center">
-    <div style="text-align: center" > Jake Scott  &nbsp; &nbsp; | &nbsp; &nbsp; <a style="text-align: right" href="mailto:jake.murphy.scott@gmail.com"> jake.murphy.scott@gmail.com</a>  &nbsp; &nbsp; | &nbsp; &nbsp; <a target="_blank" rel="noopener noreferrer" href="https://jakescott.dev">JakeScott.dev</a>
-    </div>
+<div style="text-align: center"> 
+    <strong>
+            Jake Scott
+        </strong>  &nbsp; &nbsp; | &nbsp; &nbsp; 
+    <a style="text-align: right" 
+            href="mailto:jake.murphy.scott@gmail.com"> 
+        <strong>
+            jake.murphy.scott@gmail.com
+        </strong>
+    </a>  &nbsp; &nbsp; | &nbsp; &nbsp; 
+    <a target="_blank" 
+        rel="noopener noreferrer" 
+        href="https://jakescott.dev">
+        <strong>
+            JakeScott.dev
+        </strong>
+    </a>
 </div>
 
 ---
@@ -44,13 +37,19 @@ isPublished: false
 - Operational and administrative duties necessary to complete each admission
 </p> -->
 
-<div class="title-company">
+<!-- The media querry in the CSS sheet wont work due to inline styling. Inline 
+styling must stay until the PDF can be converted without the use
+of inline styling as it doesn't hold its style - may need to use a different converter - or
+properly hook up the style sheet with the pdf converter, however, it inherits all other styles. 
+Can't figure out why its not inheriting the 'float: right' argument from the CSS sheet. -->
+
+<div class="resume-title-city-time">
     <strong>
         Project Manager | Real Estate Investing and Remodeling
     </strong>
-    <span style="float:right;">
+    <div class="city-duration" style="float: right">
         Nashville, TN | Mar 2019 - Present
-    </span>
+    </div>
 </div> 
 
 <p class="resume-content">
@@ -59,13 +58,13 @@ isPublished: false
     - Managed all aspects of the renovation process, including budgeting, & subcontractor coordination
 </p>
 
-<div class="title-company">
+<div class="resume-title-city-time">
     <strong>
         Research Intern | Fisk University
     </strong>
-    <span style="float:right;">
+    <div class="city-duration" style="float: right">
         Nashville, TN | Summer 2023
-    </span>
+    </div>
 </div> 
 
 <p class="resume-content">
@@ -74,13 +73,13 @@ isPublished: false
     - Contributed to the design and construction of a modular electronic radiation detection device
 </p>
 
-<div class="title-company">
+<div class="resume-title-city-time">
     <strong>
         Full Stack Software Developer | Nashville Software School
     </strong>
-    <span style="float:right;">
+    <div class="city-duration" style="float: right">
         Nashville, TN | May 2019 - Nov 2019
-    </span>
+    </div>
 </div> 
 
 <p class="resume-content">
@@ -92,13 +91,13 @@ isPublished: false
     - Built and interacted with databases using SQL 
 </p>
 
-<div class="title-company">
+<div class="resume-title-city-time">
     <strong>
         Owner | Murphy’s Motor Works
     </strong>
-    <span style="float:right;">
+    <div class="city-duration" style="float: right">
         Nashville, TN | Aug 2013 - Mar 2019
-    </span>
+    </div>
 </div> 
 
 <p class="resume-content">
@@ -111,13 +110,13 @@ isPublished: false
     - Managed employees, accounted for taxes and payroll with Quickbooks
 </p>
 
-<div class="title-company">
+<div class="resume-title-city-time">
     <strong>
         Product design and fabrication, Co-owner | Rook Industries
     </strong>
-    <span style="float:right;">
+    <div class="city-duration" style="float: right">
         Nashville, TN | Jan 2012 - June 2013
-    </span>
+    </div>
 </div> 
 
 <p class="resume-content">
@@ -127,13 +126,13 @@ isPublished: false
     - Promoted business via social media for events and influencers
 </p>
 
-<div class="title-company">
+<div class="resume-title-city-time">
     <strong>
         Machinest/Import Specialist | USA Motor and Machine
     </strong>
-    <span style="float:right;">
+    <div class="city-duration" style="float: right">
         Nashville, TN | Jan 2009 - Jan 2012
-    </span>
+    </div>
 </div> 
 
 <p class="resume-content">
@@ -148,40 +147,40 @@ isPublished: false
     Product Design, Project Management, Directive and Emotionally Intelligent Communication, Strategy and Organization, Customer Satisfaction, Electrical Design and Diagnosis, Machine and Technical Troubleshooting, Python, JavaScript, React, Django, HTML, CSS, SQL, Matlab, AutoCAD, SolidWorks, Git/GitHub, Excel, MS Office
 </p>
 
-<div class="title-company">
+<div class="resume-title-city-time">
     <strong>
         Tennessee State University | BS in Mechanical Engineering | GPA:3.8
     </strong>
-    <span style="float:right;">
+    <div style="float:right;">
         Jan 2023 - May 2025
-    </span>
+    </div>
 </div> 
 
-<div class="title-company">
+<div class="resume-title-city-time">
     <strong>
         Nashville State Community College | AS in Mechanical Engineering | GPA:3.9
     </strong>
-    <span style="float:right;">
+    <div style="float:right;">
         Jan 2020 - May 2023
-    </span>
+    </div>
 </div> 
 
-<div class="title-company">
+<div class="resume-title-city-time">
     <strong>
         Nashville Software School | Full Stack Software Engineer  
     </strong>
-    <span style="float:right;">
+    <div style="float:right;">
         2019
-    </span>
+    </div>
 </div> 
 
-<div class="title-company">
+<div class="resume-title-city-time">
     <strong>
         Nashville Auto Diesel College | Automotive Repair and Diesel Specialties  
     </strong>
-    <span style="float:right;">
+    <div style="float:right;">
         2010
-    </span>
+    </div>
 </div> 
 
 ---

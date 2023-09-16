@@ -1,4 +1,5 @@
 {
     "markdown-pdf.displayHeaderFooter": false,
-    "markdown-pdf.includeDefaultStyles": true
+    "markdown-pdf.includeDefaultStyles": true,
+    "markdown-pdf.stylesRelativePathFile": true
 }
