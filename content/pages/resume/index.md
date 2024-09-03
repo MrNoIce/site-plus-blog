@@ -57,7 +57,6 @@ isPublished: false
 
 <p class="resume-content">
     - Integrated into Mission Control's core services, overseeing 250+ Severity 3, 4, and 5 incidents <br />
-    <!-- - Managed 1,200+ incidents, consistently exceeding KPIs for service restoration and communication <br /> -->
     - Led internship challenge group as Project Manager, developing solutions for technical debt <br />
     - Created Mission Critical visualizations with Splunk dashboards, XML code, and BigPanda
 </p>
@@ -175,6 +174,8 @@ isPublished: false
     <a href="index.pdf" target="_blank">View as PDF</a>
 </div>
 
+
+<!-- - Managed 1,200+ incidents, consistently exceeding KPIs for service restoration and communication <br /> -->
 <!-- The media query in the CSS sheet won't work due to inline styling. Inline 
 styling must stay until the PDF can be converted without the use
 of inline styling as it doesn't hold its style - may need to use a different converter - or
