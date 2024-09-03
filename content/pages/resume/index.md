@@ -12,10 +12,10 @@ isPublished: false
 
 <div style="text-align: center"> 
     <strong>
-            Jake Scott
-        </strong>  &nbsp; &nbsp; | &nbsp; &nbsp; 
+        Jake Scott
+    </strong>  &nbsp; &nbsp; | &nbsp; &nbsp; 
     <a style="text-align: right" 
-            href="mailto:jake.murphy.scott@gmail.com"> 
+        href="mailto:jake.murphy.scott@gmail.com"> 
         <strong>
             jake.murphy.scott@gmail.com
         </strong>
@@ -31,18 +31,6 @@ isPublished: false
 
 ---
 
-<!-- **JourneyPure | Admissions Coordinator** | *June 2020 : December 2020*
-<p>- Managed new inquiries for admissions to JourneyPure Outpatient Programs <br />
-- Maintained admission guidelines by developing and updating admission policies <br />
-- Operational and administrative duties necessary to complete each admission
-</p> -->
-
-<!-- The media querry in the CSS sheet wont work due to inline styling. Inline 
-styling must stay until the PDF can be converted without the use
-of inline styling as it doesn't hold its style - may need to use a different converter - or
-properly hook up the style sheet with the pdf converter, however, it inherits all other styles. 
-Can't figure out why its not inheriting the 'float: right' argument from the CSS sheet. -->
-
 <div class="resume-title-city-time">
     <strong>
         Project Manager | Real Estate Investing and Remodeling
@@ -55,7 +43,23 @@ Can't figure out why its not inheriting the 'float: right' argument from the CSS
 <p class="resume-content">
     - Completed high quality projects on time and within budget; increasing resale value by 50% <br />
     - Conducted market research and financial analysis to identify profitable properties <br />
-    - Managed all aspects of the renovation process, including budgeting, & subcontractor coordination
+    - Managed all aspects of the renovation process, including budgeting and subcontractor coordination
+</p>
+
+<div class="resume-title-city-time">
+    <strong>
+        Site Reliability Engineer Intern | UBS
+    </strong>
+    <div class="city-duration" style="float: right">
+        Nashville, TN | May 2024 - August 2024
+    </div>
+</div> 
+
+<p class="resume-content">
+    - Integrated into Mission Control's core services, overseeing 250+ Severity 3, 4, and 5 incidents <br />
+    <!-- - Managed 1,200+ incidents, consistently exceeding KPIs for service restoration and communication <br /> -->
+    - Led internship challenge group as Project Manager, developing solutions for technical debt <br />
+    - Created Mission Critical visualizations with Splunk dashboards, XML code, and BigPanda
 </p>
 
 <div class="resume-title-city-time">
@@ -75,24 +79,6 @@ Can't figure out why its not inheriting the 'float: right' argument from the CSS
 
 <div class="resume-title-city-time">
     <strong>
-        Full Stack Software Developer | Nashville Software School
-    </strong>
-    <div class="city-duration" style="float: right">
-        Nashville, TN | May 2019 - Nov 2019
-    </div>
-</div> 
-
-<p class="resume-content">
-    - Built browser-based single page applications using React, Javascript, CSS, and HTML  <br />
-    - Utilized Git/GitHub for source code version control and managing with GitHub projects  <br />
-    - Applied JavaScript fundamentals to write dry, modular code and reusable components  <br />
-    - Styled web applications using Bootstrap, Semantic UI, Jquery, and CSS  <br />
-    - Developed web applications using Python and Django, and built APIʼs using Django REST  <br />
-    - Built and interacted with databases using SQL 
-</p>
-
-<div class="resume-title-city-time">
-    <strong>
         Owner | Murphy’s Motor Works
     </strong>
     <div class="city-duration" style="float: right">
@@ -102,17 +88,17 @@ Can't figure out why its not inheriting the 'float: right' argument from the CSS
 
 <p class="resume-content">
     - Consistent year-over-year growth of 50% in shop income and client base through word-of-mouth referrals <br />
-    - Curated customer relations, Income and expense accounts, managed parts and supplies <br />
-    - Tuned and reflashed ECMs with eeprom and flash memory; Rebuilt and balanced and Lithium-ion batteries  <br />
+    - Curated customer relations, income and expense accounts, managed parts and supplies <br />
+    - Tuned and reflashed ECMs with eeprom and flash memory; rebuilt and balanced Lithium-ion batteries  <br />
     - Modified shop router with Raspberry Pi and PiHole for ad-free YouTube channel  <br />
-    - Built/Diag'd 12vdc, CAT5/CAT6 network, and 3 phase 220v electrical systems with OE and aftermarket interface  <br />
-    - Acquired an Auto dealers license; bought, listed, and sold vehicles <br />
-    - Managed employees, accounted for taxes and payroll with Quickbooks
+    - Built/diag'd 12vdc, CAT5/CAT6 network, and 3-phase 220v electrical systems with OE and aftermarket interfaces  <br />
+    - Acquired an auto dealer's license; bought, listed, and sold vehicles <br />
+    - Managed employees, accounted for taxes and payroll with QuickBooks
 </p>
 
 <div class="resume-title-city-time">
     <strong>
-        Product design and fabrication, Co-owner | Rook Industries
+        Product Design and Fabrication, Co-owner | Rook Industries
     </strong>
     <div class="city-duration" style="float: right">
         Nashville, TN | Jan 2012 - June 2013
@@ -122,13 +108,13 @@ Can't figure out why its not inheriting the 'float: right' argument from the CSS
 <p class="resume-content">
     - Obtained a patent-pending license for a product I designed <br />
     - Developed and fabricated chassis bracing products <br />
-    - Utilized AutoCad and SolidWorks for design <br />
+    - Utilized AutoCAD and SolidWorks for design <br />
     - Promoted business via social media for events and influencers
 </p>
 
 <div class="resume-title-city-time">
     <strong>
-        Machinest/Import Specialist | USA Motor and Machine
+        Machinist/Import Specialist | USA Motor and Machine
     </strong>
     <div class="city-duration" style="float: right">
         Nashville, TN | Jan 2009 - Jan 2012
@@ -136,7 +122,7 @@ Can't figure out why its not inheriting the 'float: right' argument from the CSS
 </div> 
 
 <p class="resume-content">
-    - Maintained and operated machines including the crankshaft grinder, milling, honing, line boring machines <br />
+    - Maintained and operated machines including the crankshaft grinder, milling, honing, and line boring machines <br />
     - Developed their welding and fabrication department, enhancing the overall capabilities of the company
 </p>
 
@@ -149,7 +135,7 @@ Can't figure out why its not inheriting the 'float: right' argument from the CSS
 
 <div class="resume-title-city-time">
     <strong>
-        Tennessee State University | BS in Mechanical Engineering | GPA:3.8
+        Tennessee State University | BS in Mechanical Engineering | GPA: 3.8
     </strong>
     <div style="float:right;">
         Jan 2023 - May 2025
@@ -158,7 +144,7 @@ Can't figure out why its not inheriting the 'float: right' argument from the CSS
 
 <div class="resume-title-city-time">
     <strong>
-        Nashville State Community College | AS in Mechanical Engineering | GPA:3.9
+        Nashville State Community College | AS in Mechanical Engineering | GPA: 3.9
     </strong>
     <div style="float:right;">
         Jan 2020 - May 2023
@@ -167,7 +153,7 @@ Can't figure out why its not inheriting the 'float: right' argument from the CSS
 
 <div class="resume-title-city-time">
     <strong>
-        Nashville Software School | Full Stack Software Engineer  
+        Nashville Software School | Full Stack Software Engineer | Python/Django/React
     </strong>
     <div style="float:right;">
         2019
@@ -189,22 +175,19 @@ Can't figure out why its not inheriting the 'float: right' argument from the CSS
     <a href="index.pdf" target="_blank">View as PDF</a>
 </div>
 
-<!-- **Project Manager | Real Estate Investing and Remodeling** | Nashville, TN | *March 2019 - Present*
+<!-- The media query in the CSS sheet won't work due to inline styling. Inline 
+styling must stay until the PDF can be converted without the use
+of inline styling as it doesn't hold its style - may need to use a different converter - or
+properly hook up the style sheet with the pdf converter, however, it inherits all other styles. 
+Can't figure out why it's not inheriting the 'float: right' argument from the CSS sheet. -->
 
-<p>
-- Completed high quality projects on time and within budget; increasing resale value by 50% <br />
-- Conducted market research and financial analysis to identify profitable properties <br />
-- Managed all aspects of the renovation process, including budgeting, & subcontractor coordination. 
-</p>
+<!-- **JourneyPure | Admissions Coordinator** | *June 2020 : December 2020*
+<p>- Managed new inquiries for admissions to JourneyPure Outpatient Programs <br />
+- Maintained admission guidelines by developing and updating admission policies <br />
+- Operational and administrative duties necessary to complete each admission
+</p> -->
 
-**Research Intern | Fisk University** | Nashville, TN | *Summer 2023*
-<p>
-- Developed and implemented an algorithm to analyze raw data, enhancing data processing capabilities. <br />
-- Conducted in-depth research on scintillator crystals and their applications in radiation detection. <br />
-- Contributed to the design and construction of a modular electronic radiation detection device.
-</p>
-
-**Full Stack Software Developer | Nashville Software School** | Nashville, TN | *May 2019 - November 2019*
+<!-- **Full Stack Software Developer | Nashville Software School** | Nashville, TN | *May 2019 - November 2019*
 <p>
 - Built browser-based single page applications using React, Javascript, CSS, and HTML  <br />
 - Utilized Git/GitHub for source code version control and managing with GitHub projects  <br />
@@ -212,38 +195,35 @@ Can't figure out why its not inheriting the 'float: right' argument from the CSS
 - Styled web applications using Bootstrap, Semantic UI, Jquery, and CSS  <br />
 - Developed web applications using Python and Django, and built APIʼs using Django REST  <br />
 - Built and interacted with databases using SQL 
-</p>
-
-<!-- - Collaborated on group projects reflecting real-world business problems using Agile development <br /> -->
+</p> -->
 
 <!-- **Owner | Murphy’s Motor Works** | Nashville, TN | *August 2013 - March 2019*
-
 <p>
 - Consistent year-over-year growth of 50% in shop income and client base through word-of-mouth referrals <br />
-- Built customer relations, Income and expense accounts, managed parts and supplies <br />
-- Tuned and reflashed ECMs with eeprom and flash memory; Rebuilt and balanced and Lithium-ion batteries  <br />
+- Built customer relations, income and expense accounts, managed parts and supplies <br />
+- Tuned and reflashed ECMs with eeprom and flash memory; rebuilt and balanced Lithium-ion batteries  <br />
 - Modified shop router with Raspberry Pi and PiHole for ad-free YouTube channel  <br />
-- Diagnosed and repaired multiplex 12vdc electrical systems with OE and aftermarket interface  <br />
-- Wired CAT5/CAT6 surveillance/networking systems and 3 phase 220v machinery  <br />
-- Acquired an Auto dealers license; bought, listed, and sold vehicles <br />
-- Managed employees, accounted for taxes and payroll with Quickbooks
-</p>
+- Diagnosed and repaired multiplex 12vdc electrical systems with OE and aftermarket interfaces  <br />
+- Wired CAT5/CAT6 surveillance/networking systems and 3-phase 220v machinery  <br />
+- Acquired an auto dealer's license; bought, listed, and sold vehicles <br />
+- Managed employees, accounted for taxes and payroll with QuickBooks
+</p> -->
 
-**Product design and fabrication, Co-owner | Rook Industries** | Nashville, TN | * January 2012 - June 2013*
+<!-- **Product design and fabrication, Co-owner | Rook Industries** | Nashville, TN | *January 2012 - June 2013*
 <p>
 - Obtained a patent-pending license for a product I designed <br />
 - Developed and fabricated chassis bracing products <br />
-- Utilized AutoCad and SolidWorks for design <br />
+- Utilized AutoCAD and SolidWorks for design <br />
 - Promoted business via social media for events and influencers
-</p>
+</p> -->
 
-**Machinest/Import Specialist | USA Motor and Machine** | Nashville, TN | *January 2009 - January 2012*
+<!-- **Machinist/Import Specialist | USA Motor and Machine** | Nashville, TN | *January 2009 - January 2012*
 <p>
-- Maintained and operated machines including the crankshaft grinder, milling, honing, line boring machines <br />
+- Maintained and operated machines including the crankshaft grinder, milling, honing, and line boring machines <br />
 - Developed their welding and fabrication department, enhancing the overall capabilities of the company.
-</p>
+</p> -->
 
-**Education & Skills:** *Python, JavaScript, React, Django, HTML, CSS, SQL, Matlab, AutoCAD, SolidWorks, Git/GitHub* 
+<!-- **Education & Skills:** *Python, JavaScript, React, Django, HTML, CSS, SQL, Matlab, AutoCAD, SolidWorks, Git/GitHub* 
 
 **Tennessee State University | BS in Mechanical Engineering | Jan 2023 - May 2025** <br />
 **Nashville State Community College | AS in Mechanical Engineering | Jan 2020 - May 2023** <br />
